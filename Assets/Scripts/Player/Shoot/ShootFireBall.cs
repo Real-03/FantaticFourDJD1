@@ -12,7 +12,7 @@ public class ShootFireBall : MonoBehaviour
     {
         if (Input.GetKeyDown(shootKey))
         {
-            Shoot();
+                Shoot();  
         }
     }
 
