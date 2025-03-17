@@ -20,12 +20,10 @@ public class FireBall : MonoBehaviour
         {
             case playerTag:
             {
-                Debug.Log(other.tag);
                 break;
             }
             case enemyTag:
             {
-                Debug.Log(other.tag);
                 Destroy(other.gameObject);
                 Destroy(gameObject);
                 break;

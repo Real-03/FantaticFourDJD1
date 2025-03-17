@@ -20,7 +20,7 @@ public class PlayerMovementConfigurableKeys : MonoBehaviour
     public float dashingTime = 1f;
     public float dashingCooldown = 1f;
     private bool canDash = true;
-    private bool isDashing = false;
+    public bool isDashing = false;
     public KeyCode dashKey = KeyCode.E;
 
     [Header("KnockBack Setting")]
@@ -40,12 +40,17 @@ public class PlayerMovementConfigurableKeys : MonoBehaviour
 
         float move = 0;
 
-        if (Input.GetKey(moveRightKey)) move = 1;
-        else if (Input.GetKey(moveLeftKey)) move = -1;
+        if (Input.GetKey(moveRightKey)) 
+        {
+            move = 1;
+        }
+        else if (Input.GetKey(moveLeftKey)) 
+        {
+            move = -1;
+        }
 
         // Corrigir linearVelocity -> Usar velocity corretamente
         rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
-
         // Flip do personagem
         if (move > 0 && transform.localScale.x < 0) Flip();
         else if (move < 0 && transform.localScale.x > 0) Flip();
@@ -59,7 +64,6 @@ public class PlayerMovementConfigurableKeys : MonoBehaviour
         //Dash
         if (Input.GetKeyDown(dashKey))
         {
-            Debug.Log("Dash Hability Start " + move);
             if(canDash == true && isDashing == false)
                 StartCoroutine(DashAbility());
             else
@@ -111,7 +115,7 @@ public class PlayerMovementConfigurableKeys : MonoBehaviour
 //Dash ability 
     private IEnumerator DashAbility()
     {
-        Debug.Log("nada");
+        
         canDash = false;
         isDashing = true;
         Vector2 dashingForceVector =  new Vector2(dashingPower,0f);
@@ -119,16 +123,9 @@ public class PlayerMovementConfigurableKeys : MonoBehaviour
             rb.AddForce(dashingForceVector, ForceMode2D.Force);
         else
             rb.AddForce(-dashingForceVector, ForceMode2D.Force);
-
-
-        
-        Debug.Log("Velocity" +rb.linearVelocity.x);
-        Debug.Log(dashingPower);
-        
         yield return new WaitForSeconds(dashingTime);
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
-        Debug.Log("dash end");
     }
 }
