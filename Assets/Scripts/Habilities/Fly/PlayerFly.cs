@@ -34,6 +34,7 @@ public class PlayerFly : MonoBehaviour
         rb.gravityScale = 0;
 
         float Timer = flightTime;
+        
         while (Timer > 0)
         {
             float vertical = Input.GetAxis("Jump_P2");
