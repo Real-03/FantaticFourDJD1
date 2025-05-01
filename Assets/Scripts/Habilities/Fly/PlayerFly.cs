@@ -1,45 +1,42 @@
 using UnityEngine;
-
+using System.Collections;
+using UnityEngine.UI;
 public class PlayerFly : MonoBehaviour
 {
     public float flySpeed = 5f;               // Velocidade de voo
     public float flightTime = 5f;             // Tempo máximo de voo
-    private float currentFlightTime;          // Tempo restante de voo
+    public float cooldownFlightTime = 5f;  
     private bool isFlying = false;            
     private Rigidbody2D rb;
     private PlayerMovement playerMovementScript;
 
+    [SerializeField] private Image flightCooldownUI;
+
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        currentFlightTime = flightTime;  // Inicializa o tempo de voo
+        rb = GetComponent<Rigidbody2D>(); 
         playerMovementScript =  GetComponent<PlayerMovement>();
     }
-
-    void Update()
+    private void Update()
     {
-        if (rb == null) return;
-
-
-        if (Input.GetKeyDown(KeyCode.Period) && currentFlightTime > 0)
+        if (Input.GetKeyDown(KeyCode.Period) && !isFlying)
         {
-            playerMovementScript.enabled = false;
-            isFlying = !isFlying;
-
-
-            rb.gravityScale = isFlying ? 0 : 1;
-
-
-            if (isFlying)
-            {
-                currentFlightTime = flightTime;
-            }
+            Debug.Log("Teste");
+            StartCoroutine(PerformDash());
         }
+    }
 
+    private IEnumerator PerformDash()
+    {
+        Debug.Log("Start");
+        playerMovementScript.enabled = false;
+        isFlying = !isFlying;
+        rb.gravityScale = 0;
+
+        float Timer = flightTime;
         
-        if (isFlying && currentFlightTime > 0)
+        while (Timer > 0)
         {
-            
             float vertical = Input.GetAxis("Jump_P2");
             float horizontal = Input.GetAxis("Horizontal_P2"); 
             if ((horizontal < 0) && (transform.right.x > 0))
@@ -51,22 +48,30 @@ public class PlayerFly : MonoBehaviour
                 transform.rotation = Quaternion.identity;
             }
             rb.linearVelocity = new Vector2(horizontal*flySpeed, vertical * flySpeed);
-
-            
-            currentFlightTime -= Time.deltaTime;
+            Timer -= Time.deltaTime;
+            UpdateCooldownUI(Timer);
+            yield return null;
         }
-        else if (!isFlying && currentFlightTime < flightTime)
-        {
-            
-            currentFlightTime += Time.deltaTime;
-        }
-
         
-        if (currentFlightTime <= 0)
+        rb.gravityScale =1;
+        playerMovementScript.enabled = true;
+        Timer = 0;
+        while (Timer < cooldownFlightTime)
         {
-            isFlying = false;
-            rb.gravityScale = 1;  
-            playerMovementScript.enabled = true;
+            Timer += Time.deltaTime;
+            UpdateCooldownUI(Timer);
+            yield return null;
+        }
+        isFlying = false; 
+        UpdateCooldownUI(cooldownFlightTime);
+    }
+
+    private void UpdateCooldownUI(float timeRemaining)
+    {
+        if (flightCooldownUI != null)
+        {
+            flightCooldownUI.fillAmount = Mathf.Clamp01(timeRemaining / cooldownFlightTime);
         }
     }
+    
 }
