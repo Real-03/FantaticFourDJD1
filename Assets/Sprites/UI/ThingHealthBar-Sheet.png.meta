@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: a23f02f96e2bc0e49bc6984c7e7babb1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7741398452008896890
+    second: ThingHealthBar-Sheet_0
+  - first:
+      213: -1480193921168475830
+    second: ThingHealthBar-Sheet_1
+  - first:
+      213: -8743766989510159422
+    second: ThingHealthBar-Sheet_2
+  - first:
+      213: -1279599976295789248
+    second: ThingHealthBar-Sheet_3
+  - first:
+      213: 3304047712075643881
+    second: ThingHealthBar-Sheet_4
+  - first:
+      213: -30195368255288245
+    second: ThingHealthBar-Sheet_5
+  - first:
+      213: -4294666791551234297
+    second: ThingHealthBar-Sheet_6
+  - first:
+      213: -2587887115305363567
+    second: ThingHealthBar-Sheet_7
+  - first:
+      213: -7151099090895759921
+    second: ThingHealthBar-Sheet_8
+  - first:
+      213: 8327417856318558786
+    second: ThingHealthBar-Sheet_9
+  - first:
+      213: -6450283217781177795
+    second: ThingHealthBar-Sheet_10
+  - first:
+      213: 5756608862863946400
+    second: ThingHealthBar-Sheet_11
+  - first:
+      213: 6071779142413096303
+    second: ThingHealthBar-Sheet_12
+  - first:
+      213: 4820957431986829879
+    second: ThingHealthBar-Sheet_13
+  - first:
+      213: 2510850084056295356
+    second: ThingHealthBar-Sheet_14
+  - first:
+      213: 447136364311771444
+    second: ThingHealthBar-Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79cfbc50e8fe6b60800000000000000
+      internalID: 7741398452008896890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a497f0a987b457be0800000000000000
+      internalID: -1480193921168475830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3d57fdf36e7a680800000000000000
+      internalID: -8743766989510159422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04d8a46e992fd3ee0800000000000000
+      internalID: -1279599976295789248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebf53773e55add20800000000000000
+      internalID: 3304047712075643881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4c0849f879b49ff0800000000000000
+      internalID: -30195368255288245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f0ce4ae474664c0800000000000000
+      internalID: -4294666791551234297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197d96d316af51cd0800000000000000
+      internalID: -2587887115305363567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc51a85d34132cc90800000000000000
+      internalID: -7151099090895759921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242dc167b6ee09370800000000000000
+      internalID: 8327417856318558786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d324d77a69dfb76a0800000000000000
+      internalID: -6450283217781177795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2feddc24593ef40800000000000000
+      internalID: 5756608862863946400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65982ad5fa434450800000000000000
+      internalID: 6071779142413096303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73abadaed3b77e240800000000000000
+      internalID: 4820957431986829879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb76f6039d458d220800000000000000
+      internalID: 2510850084056295356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThingHealthBar-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 28
+        width: 50
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43976f0872c843600800000000000000
+      internalID: 447136364311771444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ThingHealthBar-Sheet_0: 7741398452008896890
+      ThingHealthBar-Sheet_1: -1480193921168475830
+      ThingHealthBar-Sheet_10: -6450283217781177795
+      ThingHealthBar-Sheet_11: 5756608862863946400
+      ThingHealthBar-Sheet_12: 6071779142413096303
+      ThingHealthBar-Sheet_13: 4820957431986829879
+      ThingHealthBar-Sheet_14: 2510850084056295356
+      ThingHealthBar-Sheet_15: 447136364311771444
+      ThingHealthBar-Sheet_2: -8743766989510159422
+      ThingHealthBar-Sheet_3: -1279599976295789248
+      ThingHealthBar-Sheet_4: 3304047712075643881
+      ThingHealthBar-Sheet_5: -30195368255288245
+      ThingHealthBar-Sheet_6: -4294666791551234297
+      ThingHealthBar-Sheet_7: -2587887115305363567
+      ThingHealthBar-Sheet_8: -7151099090895759921
+      ThingHealthBar-Sheet_9: 8327417856318558786
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
