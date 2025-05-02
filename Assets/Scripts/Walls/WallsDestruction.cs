@@ -21,8 +21,8 @@ public class WallsDestruction : MonoBehaviour
     {
         Debug.Log("Colisão detectada com: " + collision.gameObject.name);
         
-        PlayerMovement playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
-        if (playerMovement != null)
+        Dash dashScript = collision.gameObject.GetComponent<Dash>();
+        if (dashScript != null && dashScript.getIsDashing() == true)
         {
             ContactPoint2D contact = collision.contacts[0]; // Obtém o ponto de contato
             Vector3Int tilePosition = tilemap.WorldToCell(contact.point);
