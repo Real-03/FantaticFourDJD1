@@ -15,7 +15,7 @@ public class Dash : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
 
     private bool canDash = true;
-    //private bool isDashing = false;
+    private bool isDashing = false;
     private float originalGravity;
 
     private void Start()
@@ -37,7 +37,7 @@ public class Dash : MonoBehaviour
     private IEnumerator PerformDash()
     {
         canDash = false;
-        //isDashing = true;
+        isDashing = true;
 
         float startTime = Time.time;
         Vector2 dashDirection = transform.right.normalized;
@@ -55,7 +55,7 @@ public class Dash : MonoBehaviour
 
         rb.gravityScale = originalGravity;
         rb.linearVelocity = Vector2.zero;
-        //isDashing = false;
+        isDashing = false;
 
         // Cooldown
         float cooldownTimer = dashCooldown;
@@ -77,4 +77,10 @@ public class Dash : MonoBehaviour
             dashCooldownUI.fillAmount = Mathf.Clamp01(timeRemaining / dashCooldown);
         }
     }
+
+    public bool getIsDashing()
+    {
+        return isDashing;
+    }
+
 }
