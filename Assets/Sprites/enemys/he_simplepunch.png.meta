@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -109,12 +109,12 @@ TextureImporter:
       name: he_simplepunch_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 23
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -131,12 +131,12 @@ TextureImporter:
       name: he_simplepunch_1
       rect:
         serializedVersion: 2
-        x: 36
+        x: 32
         y: 0
-        width: 22
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: he_simplepunch_2
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 27
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 07139961f2c15954db8c7364d99cfac7
     internalID: 0
     vertices: []
     indices: 

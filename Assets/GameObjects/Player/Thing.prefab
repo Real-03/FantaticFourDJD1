@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 4755076376908374775}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.003, y: -0.111, z: 0}
+  m_LocalPosition: {x: 0.003, y: -0.026, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 1414918430952251852}
   - component: {fileID: 4057521768712615554}
   - component: {fileID: 668291476140572395}
-  - component: {fileID: 5223342142121805355}
+  - component: {fileID: 2867113411368386375}
   m_Layer: 10
   m_Name: Thing
   m_TagString: Thing
@@ -64,8 +64,8 @@ Transform:
   m_GameObject: {fileID: 6753108538869033028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.63, y: -1.91, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 2}
+  m_LocalPosition: {x: -104.548, y: -3.2, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6157699776172200201}
@@ -116,12 +116,12 @@ SpriteRenderer:
   m_SortingLayerID: 1431177385
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -956974161, guid: e6d0adba8f966ea4bb960d4d4a55e4d3, type: 3}
+  m_Sprite: {fileID: -1579178501599176734, guid: c653a30b1f96ba74e8a6ccf13e9a69fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.21, y: 0.23}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -188,8 +188,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.005544424, y: 0.3857634}
-  m_Size: {x: 0.26379728, y: 0.69856405}
+  m_Offset: {x: -0.011193594, y: 0.15845475}
+  m_Size: {x: 0.1677882, y: 0.3286581}
   m_Direction: 0
 --- !u!114 &448169662701081469
 MonoBehaviour:
@@ -212,8 +212,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpMaxDuration: 0.5
-  jumpGravityScale: 2
-  jumpForce: 5
+  jumpGravityScale: 4
+  jumpForce: 8
 --- !u!114 &1414918430952251852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   comboResetTime: 1.5
   attackCooldown: 0.5
   attackPoint: {fileID: 3713097159551777297}
-  attackRange: 0.5
+  attackRange: 0.41
   enemyLayers:
     serializedVersion: 2
     m_Bits: 2048
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 100
+  currentHealth: 10
   healthBar: {fileID: 0}
 --- !u!95 &668291476140572395
 Animator:
@@ -262,7 +262,7 @@ Animator:
   m_GameObject: {fileID: 6753108538869033028}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a9e62fb8326300043a472e5c8a38dee0, type: 2}
+  m_Controller: {fileID: 9100000, guid: cbc0a72a5f57f7b42954546353aafa83, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -274,7 +274,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5223342142121805355
+--- !u!114 &2867113411368386375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,12 +286,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73bf54a44f4f9a047b81e63aca074d28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 10
+  dashSpeed: 20
   dashDuration: 0.2
-  dashCooldown: 5
+  dashCooldown: 2
   dashKey: 101
   dashCooldownUI: {fileID: 0}
-  rb: {fileID: 1421943298650148470}
+  rb: {fileID: 0}
 --- !u!1 &8831212041040084787
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,7 +317,7 @@ Transform:
   m_GameObject: {fileID: 8831212041040084787}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.303, y: 0.467, z: 0}
+  m_LocalPosition: {x: 0.12, y: 0.168, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

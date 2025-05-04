@@ -47,7 +47,6 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         Debug.Log($"{gameObject.name} morreu!");
-
         animator.SetTrigger("Die");
         movementScript.enabled = false;
         gameObject.SetActive(false);
