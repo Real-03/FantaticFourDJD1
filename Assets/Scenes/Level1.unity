@@ -27949,14 +27949,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1325524391}
     m_Modifications:
     - target: {fileID: 1565086237994054103, guid: 4294bf07ea503704995d692636897195, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1565086237994054103, guid: 4294bf07ea503704995d692636897195, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1565086237994054103, guid: 4294bf07ea503704995d692636897195, type: 3}
       propertyPath: m_LocalPosition.x
       value: -214.1677
       objectReference: {fileID: 0}
@@ -28059,7 +28051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemapToHide: {fileID: 1453019365}
-  tilemapToShow: {fileID: 1987012976}
+  tilemapToShow: {fileID: 376941414}
 --- !u!114 &1453019362
 MonoBehaviour:
   m_ObjectHideFlags: 0

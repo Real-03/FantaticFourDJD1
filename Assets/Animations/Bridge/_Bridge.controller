@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: eab1c4e9bf10d2e469cbbecc0b5bc690, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9a3741fc13db5904fab3d698be2b2ffc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -104,7 +104,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: "Tom\xE1sReal_22405562_spritesheet_environment_0"
+  m_Name: _Bridge
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Break
@@ -152,7 +152,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 4fd06b5b801f6fd4dad83d3793691c85, type: 2}
+  m_Motion: {fileID: 7400000, guid: 31e13411c7a7c014592b99218e666151, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -179,7 +179,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 57bb5b0e539d55f479c18ec06c16fb2f, type: 2}
+  m_Motion: {fileID: 7400000, guid: e8703b395b4922f42860603928a76860, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

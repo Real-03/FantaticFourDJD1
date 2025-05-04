@@ -132,7 +132,7 @@ Animator:
   m_GameObject: {fileID: 9179657510641062500}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c234f6cbb42ca8940b790ac97380ad48, type: 2}
+  m_Controller: {fileID: 9100000, guid: 381a177880b4c5c4da3c84dd0a768185, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -161,8 +161,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
-  warningParticlesPrefab: {fileID: 5943081478332804940, guid: e797de764e947d14382d12dbec50a42a, type: 3}
-  bridgeBreakEffectPrefab: {fileID: 5943081478332804940, guid: e797de764e947d14382d12dbec50a42a, type: 3}
+  warningParticlesPrefab: {fileID: 369704551777266037, guid: 6a40003294352da44b2285e49b318913, type: 3}
+  bridgeBreakEffectPrefab: {fileID: 369704551777266037, guid: 6a40003294352da44b2285e49b318913, type: 3}
   animator: {fileID: 1219087556140120111}
   breakDelay: 2
 --- !u!68 &951370152503289429

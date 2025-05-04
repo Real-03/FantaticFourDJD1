@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 300114821285996420}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.294, y: 0.499, z: 0}
+  m_LocalPosition: {x: -0.133, y: 0.169, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 3942092980859984187}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.294, y: 0.419, z: 0}
+  m_LocalPosition: {x: -0.164, y: 0.105, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 4268362649503871181}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.022, y: -0.057, z: 0}
+  m_LocalPosition: {x: -0.005, y: 0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -118,7 +118,7 @@ Transform:
   m_GameObject: {fileID: 5112839213986126921}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.397, z: 0}
+  m_LocalPosition: {x: 0, y: 0.117, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -157,7 +157,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.29, y: -4.792, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8401437414719770776}
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 1431177385
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -956974161, guid: e6d0adba8f966ea4bb960d4d4a55e4d3, type: 3}
+  m_Sprite: {fileID: 544601103650737017, guid: 39a6d5204d312d6489d4256c46fc4873, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -282,8 +282,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.005544424, y: 0.3857634}
-  m_Size: {x: 0.26379728, y: 0.69856405}
+  m_Offset: {x: -0.011295319, y: 0.1204625}
+  m_Size: {x: 0.19096375, y: 0.2522971}
   m_Direction: 0
 --- !u!95 &1838882433646803638
 Animator:
