@@ -11,6 +11,7 @@ public class FireBall : MonoBehaviour
     {
         // Destroi a bola de fogo após X segundos se não atingir nada
         Destroy(gameObject, lifetime);
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -29,7 +30,8 @@ public class FireBall : MonoBehaviour
             }
             case enemyTag:
             {
-                Destroy(other.gameObject);
+                EnemyHealth enemyhealth =other.gameObject.GetComponent<EnemyHealth>();
+                enemyhealth.TakeDamage(50, other.gameObject.transform);
                 Destroy(gameObject);
                 break;
             }

@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGrounded;
     private float jumpTimer;
     private float originalGravity;
+    private float moveDir;
     private PlayerAttack playerAttack; // Referência ao script do player
 
     void Start()
@@ -34,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         ComputeGroundState();
 
-        float moveDir = Input.GetAxis(horizontalAxisName);
+        moveDir = Input.GetAxis(horizontalAxisName);
         Vector2 currentVelocity = rb.linearVelocity;
 
         //Impede movimento e rotação durante ataque
@@ -102,4 +103,9 @@ public class PlayerMovement : MonoBehaviour
         Gizmos.color = new Color(1, 0, 0, 0.5f);
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+
+    public float GetMoveDir()
+    {
+        return moveDir;
+    } 
 }

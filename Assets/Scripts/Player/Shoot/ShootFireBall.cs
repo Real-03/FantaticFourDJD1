@@ -2,14 +2,16 @@ using UnityEngine;
 
 public class ShootFireBall : MonoBehaviour
 {
-    public GameObject FireBallRight; // Prefab da fireball para a direita
-    public GameObject FiraBallLeft;  // Prefab da fireball para a esquerda
-    public Transform firePoint;            // Ponto de spawn da fireball
-    public float fireballSpeed = 10f;      // Velocidade da fireball
-    public KeyCode shootKey = KeyCode.J;   // Tecla para atirar
+    [SerializeField] private GameObject FireBallRight; // Prefab da fireball para a direita
+    [SerializeField] private GameObject FiraBallLeft;  // Prefab da fireball para a esquerda
+    [SerializeField] private Transform firePoint;            // Ponto de spawn da fireball
+    [SerializeField] private float fireballSpeed = 10f;      // Velocidade da fireball
+    [SerializeField] private KeyCode shootKey = KeyCode.J;   // Tecla para atirar
+    private PlayerMovement movementScript;
 
     void Update()
     {
+        movementScript = GetComponent<PlayerMovement>();
         if (Input.GetKeyDown(shootKey))
         {
                 Shoot();  
@@ -18,8 +20,7 @@ public class ShootFireBall : MonoBehaviour
 
     void Shoot()
     {
-        float direction = transform.localScale.x > 0 ? 1 : -1;
-        
+        float direction = transform.right.x > 0 ? 1 : -1;
 
         GameObject fireballPrefab = direction > 0 ? FireBallRight : FiraBallLeft;
 
