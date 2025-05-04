@@ -9,7 +9,7 @@ public class PlayerFly : MonoBehaviour
     private bool isFlying = false;            
     private Rigidbody2D rb;
     private PlayerMovement playerMovementScript;
-
+    [SerializeField] private Animator animator;
     [SerializeField] private Image flightCooldownUI;
 
     void Start()
@@ -21,7 +21,7 @@ public class PlayerFly : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Period) && !isFlying)
         {
-            Debug.Log("Teste");
+
             StartCoroutine(PerformDash());
         }
     }
@@ -29,6 +29,7 @@ public class PlayerFly : MonoBehaviour
     private IEnumerator PerformDash()
     {
         Debug.Log("Start");
+        animator.SetBool("Fly", !isFlying);
         playerMovementScript.enabled = false;
         isFlying = !isFlying;
         rb.gravityScale = 0;
@@ -52,7 +53,7 @@ public class PlayerFly : MonoBehaviour
             UpdateCooldownUI(Timer);
             yield return null;
         }
-        
+        animator.SetBool("Fly", !isFlying);
         rb.gravityScale =1;
         playerMovementScript.enabled = true;
         Timer = 0;
