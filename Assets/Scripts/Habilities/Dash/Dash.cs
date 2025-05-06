@@ -13,17 +13,21 @@ public class Dash : MonoBehaviour
     [Header("References")]
     [SerializeField] private Image dashCooldownUI;
     [SerializeField] private Rigidbody2D rb;
-
+     
+    [SerializeField] private GameObject dashParticle;
+    [SerializeField] private Transform dashParticleSpawn;
     private bool canDash = true;
     private bool isDashing = false;
     private float originalGravity;
 
+    private SpawnParticle particleManager;
     private void Start()
     {
         if (rb == null)
             rb = GetComponent<Rigidbody2D>();
 
         originalGravity = rb.gravityScale;
+        particleManager = FindFirstObjectByType<SpawnParticle>();
     }
 
     private void Update()
@@ -36,6 +40,8 @@ public class Dash : MonoBehaviour
 
     private IEnumerator PerformDash()
     {
+        particleManager.SpawnParticlesY(dashParticle,dashParticleSpawn,transform.right.normalized.x);
+        Debug.Log(transform.right.normalized);
         canDash = false;
         isDashing = true;
 
