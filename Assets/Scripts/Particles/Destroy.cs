@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
-
+    [SerializeField] private float time;
     private void Start()
     {
         
-        Destroy(gameObject, 200);
+        Destroy(gameObject, time);
     }
 
     private void Update()

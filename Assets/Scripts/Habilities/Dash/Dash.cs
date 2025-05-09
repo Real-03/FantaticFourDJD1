@@ -41,7 +41,6 @@ public class Dash : MonoBehaviour
     private IEnumerator PerformDash()
     {
         particleManager.SpawnParticlesY(dashParticle,dashParticleSpawn,transform.right.normalized.x);
-        Debug.Log(transform.right.normalized);
         canDash = false;
         isDashing = true;
 
