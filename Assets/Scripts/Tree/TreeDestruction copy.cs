@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Tilemaps;
-public class WallsDestruction : MonoBehaviour
+public class TreeDestruction : MonoBehaviour
 {
     [SerializeField] private Tilemap tilemap; // Referência ao Tilemap
     // Start is called once before the first execution of Update after the MonoBehaviour is created
