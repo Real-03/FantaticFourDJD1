@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 02b82b17564abb946acd77095fe90b68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 244940825718378893
+    second: HumanTorchHealthBar-Sheet_0
+  - first:
+      213: 1487281569308158951
+    second: HumanTorchHealthBar-Sheet_1
+  - first:
+      213: 6099065514839784804
+    second: HumanTorchHealthBar-Sheet_2
+  - first:
+      213: -467056383540405219
+    second: HumanTorchHealthBar-Sheet_3
+  - first:
+      213: 2922062200324120806
+    second: HumanTorchHealthBar-Sheet_4
+  - first:
+      213: 7809593659705318595
+    second: HumanTorchHealthBar-Sheet_5
+  - first:
+      213: 2875036174837221435
+    second: HumanTorchHealthBar-Sheet_6
+  - first:
+      213: -2081206085871929476
+    second: HumanTorchHealthBar-Sheet_7
+  - first:
+      213: -6309631760223028855
+    second: HumanTorchHealthBar-Sheet_8
+  - first:
+      213: -319637138218520369
+    second: HumanTorchHealthBar-Sheet_9
+  - first:
+      213: -6040853545707139968
+    second: HumanTorchHealthBar-Sheet_10
+  - first:
+      213: 6419547154932260250
+    second: HumanTorchHealthBar-Sheet_11
+  - first:
+      213: 3747151889096117221
+    second: HumanTorchHealthBar-Sheet_12
+  - first:
+      213: 2681158482341972201
+    second: HumanTorchHealthBar-Sheet_13
+  - first:
+      213: -4098420325713785859
+    second: HumanTorchHealthBar-Sheet_14
+  - first:
+      213: 3200425527832283331
+    second: HumanTorchHealthBar-Sheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d815feb1264366300800000000000000
+      internalID: 244940825718378893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb299315b2e3a410800000000000000
+      internalID: 1487281569308158951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46d3cd185cb34a450800000000000000
+      internalID: 6099065514839784804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cdef891bea489f0800000000000000
+      internalID: -467056383540405219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e06ae5e6104d8820800000000000000
+      internalID: 2922062200324120806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ccd0e67e00416c60800000000000000
+      internalID: 7809593659705318595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38029d1b2e26e720800000000000000
+      internalID: 2875036174837221435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77f83377121e13e0800000000000000
+      internalID: -2081206085871929476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989326c085faf68a0800000000000000
+      internalID: -6309631760223028855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0767f57bb609bf0800000000000000
+      internalID: -319637138218520369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c87fbb4b39a2ca0800000000000000
+      internalID: -6040853545707139968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d5b9c0020d61950800000000000000
+      internalID: 6419547154932260250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb02053ace800430800000000000000
+      internalID: 3747151889096117221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8c48e2f63653520800000000000000
+      internalID: 2681158482341972201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfbc6999d6c7f17c0800000000000000
+      internalID: -4098420325713785859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanTorchHealthBar-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 28
+        width: 50
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8098c9f023a6c20800000000000000
+      internalID: 3200425527832283331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HumanTorchHealthBar-Sheet_0: 244940825718378893
+      HumanTorchHealthBar-Sheet_1: 1487281569308158951
+      HumanTorchHealthBar-Sheet_10: -6040853545707139968
+      HumanTorchHealthBar-Sheet_11: 6419547154932260250
+      HumanTorchHealthBar-Sheet_12: 3747151889096117221
+      HumanTorchHealthBar-Sheet_13: 2681158482341972201
+      HumanTorchHealthBar-Sheet_14: -4098420325713785859
+      HumanTorchHealthBar-Sheet_15: 3200425527832283331
+      HumanTorchHealthBar-Sheet_2: 6099065514839784804
+      HumanTorchHealthBar-Sheet_3: -467056383540405219
+      HumanTorchHealthBar-Sheet_4: 2922062200324120806
+      HumanTorchHealthBar-Sheet_5: 7809593659705318595
+      HumanTorchHealthBar-Sheet_6: 2875036174837221435
+      HumanTorchHealthBar-Sheet_7: -2081206085871929476
+      HumanTorchHealthBar-Sheet_8: -6309631760223028855
+      HumanTorchHealthBar-Sheet_9: -319637138218520369
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
