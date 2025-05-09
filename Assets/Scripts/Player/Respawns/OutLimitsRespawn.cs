@@ -22,35 +22,41 @@ public class OutLimitsRespawn : MonoBehaviour
 
     private IEnumerator RespawnPlayer(GameObject player)
     {
-        player.SetActive(false); // Desativa o jogador temporariamente
-        yield return new WaitForSeconds(respawnDelay);
-        
+        player.SetActive(false);
+    yield return new WaitForSeconds(respawnDelay);
+
+    if (player.CompareTag("Player"))
+    {
         GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
         GameObject alivePlayer = players.FirstOrDefault(p => p.activeSelf);
 
         if (alivePlayer != null)
         {
             player.transform.position = alivePlayer.transform.position;
-            player.SetActive(true);
-        }
-        else
-        {
-           player.transform.position = Spawn.transform.position;
-        }
-        
-        GameObject[] players1 = GameObject.FindGameObjectsWithTag("Thing");
-        GameObject alivePlayer1 = players1.FirstOrDefault(p => p.activeSelf);
-
-        if (alivePlayer1 != null)
-        {
-            player.transform.position = alivePlayer1.transform.position;
-            player.SetActive(true);
         }
         else
         {
             player.transform.position = Spawn.transform.position;
         }
 
+        player.SetActive(true);
+    }
+    else if (player.CompareTag("Thing"))
+    {
+        GameObject[] things = GameObject.FindGameObjectsWithTag("Thing");
+        GameObject aliveThing = things.FirstOrDefault(p => p.activeSelf);
+
+        if (aliveThing != null)
+        {
+            player.transform.position = aliveThing.transform.position;
+        }
+        else
+        {
+            player.transform.position = Spawn.transform.position;
+        }
+
+        player.SetActive(true);
+    }
         
     }
 }
