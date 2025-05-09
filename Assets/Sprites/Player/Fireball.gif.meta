@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 8168540d099986541b4621b087831b14
+guid: c6f8675f000e04f45b1152f9e90d5ed2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7789717728805711173
-    second: he_simplepunch_0
-  - first:
-      213: 3263928728314176752
-    second: he_simplepunch_1
-  - first:
-      213: -6353186560720155237
-    second: he_simplepunch_2
+      213: -6607481912129624618
+    second: Fireball_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,67 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: he_simplepunch_0
+      name: Fireball_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 30
+        y: 23
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb219f15ffc55e390800000000000000
-      internalID: -7789717728805711173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: he_simplepunch_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0f4eb57a2edcb4d20800000000000000
-      internalID: 3263928728314176752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: he_simplepunch_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b9d4d70db72f4d7a0800000000000000
-      internalID: -6353186560720155237
+      spriteID: 6d5e1b775328d44a0800000000000000
+      internalID: -6607481912129624618
       vertices: []
       indices: 
       edges: []
@@ -201,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 07139961f2c15954db8c7364d99cfac7
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      he_simplepunch_0: -7789717728805711173
-      he_simplepunch_1: 3263928728314176752
-      he_simplepunch_2: -6353186560720155237
+      Fireball_0: -6607481912129624618
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
