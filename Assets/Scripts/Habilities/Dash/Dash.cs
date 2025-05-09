@@ -22,7 +22,7 @@ public class Dash : MonoBehaviour
     {
         if (Input.GetKeyDown(shootKey))
         {
-            Debug.Log("Key pressed " +);
+            Debug.Log("Key pressed ");
             DashHability();  
             
         }
