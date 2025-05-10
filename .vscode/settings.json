@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "FantaticFourDJD1.sln"
+    "dotnet.defaultSolution": "FantasticFour3.sln"
 }
