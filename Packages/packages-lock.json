@@ -251,8 +251,6 @@
         "com.unity.searcher": "4.9.2"
       }
     },
-<<<<<<< HEAD
-=======
     "com.unity.sysroot": {
       "version": "2.0.10",
       "depth": 1,
@@ -269,7 +267,6 @@
       },
       "url": "https://packages.unity.com"
     },
->>>>>>> d57e1163c2f9efb881409f72dd2d4dbb858892b1
     "com.unity.test-framework": {
       "version": "1.4.5",
       "depth": 0,
@@ -303,8 +300,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
     "com.unity.toolchain.win-x86_64-linux-x86_64": {
       "version": "2.0.10",
       "depth": 0,
@@ -315,7 +310,6 @@
       },
       "url": "https://packages.unity.com"
     },
->>>>>>> d57e1163c2f9efb881409f72dd2d4dbb858892b1
     "com.unity.ugui": {
       "version": "2.0.0",
       "depth": 0,
