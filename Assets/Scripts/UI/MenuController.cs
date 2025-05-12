@@ -2,56 +2,173 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using NUnit.Framework;
+using System.Collections.Generic;
 
 public class MenuController : MonoBehaviour
 {
-    public Button PlayButton;
-    public Button TutorialButton;
-    public Button OptionsButton;
-    public Button QuitButton;
+    [Header("Volume Settings")]
+    [SerializeField] private Text volumeTextValue = null;
+    [SerializeField] private Slider volumeSlider = null;
 
-    void Start()
+    [Header("Gameplay Settings")]
+    [SerializeField] private Text ControllerSensitivityTextValue = null;
+    [SerializeField] private Slider ControllerSenSlider = null;
+    [SerializeField] private int defaultSen = 4;
+    public int mainControllerSen = 4;
+
+    [Header("Toggle Settings")]
+    [SerializeField] private Toggle invertYToggle = null; 
+
+    [Header("Graphic Settings")]
+    [SerializeField] private Slider brightnessSlider = null;
+    [SerializeField] private Text brightnessTextValue = null;
+    [SerializeField] private float defaultBrightness = 1;
+    [SerializeField] private Dropdown qualityDropdown;
+    [SerializeField] private Toggle fullScreenToggle;
+
+    private int _qualityLevel;
+    private bool _isFullScreen;
+    private float _brightnessLevel;
+
+    [Header("Resolution Dropdown")]
+    public Dropdown resolutionDropdown;
+    private Resolution[] resolutions;
+
+    [Header("Menu UI Settings")]
+    [SerializeField] public GameObject MainMenu;
+    [SerializeField] public GameObject TutorialMenu;
+    [SerializeField] public GameObject OptionsMenu;
+    [SerializeField] public GameObject ControllsMenu;
+
+    public void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        resolutions = Screen.resolutions;
+        resolutionDropdown.ClearOptions();
 
-        EventSystem.current.SetSelectedGameObject(PlayButton.gameObject);
+        List<string> options = new List<string>();
 
-        // Liga os botões às funções
-        PlayButton.onClick.AddListener(Play);
-        OptionsButton.onClick.AddListener(Options);
-        TutorialButton.onClick.AddListener(Tutorial);
-        QuitButton.onClick.AddListener(Quit);
-    }
+        int currentResolutionIndex = 0;
 
-    void Update()
-    {
-        if (EventSystem.current.currentSelectedGameObject == null)
+        for(int i = 0; i < resolutions.Length; i++)
         {
-            EventSystem.current.SetSelectedGameObject(PlayButton.gameObject);
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
+
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
+            {
+                currentResolutionIndex = i;
+            }
         }
+
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
     }
 
-    void Play()
+    public void PlayGame()
     {
-        Debug.Log("Play");
         SceneManager.LoadScene(1);
     }
 
-    void Tutorial()
+    public void TutorialOn()
     {
-        Debug.Log("Tutorial");
+        TutorialMenu.SetActive(true);
     }
 
-    void Options()
+    public void TutorialOff()
     {
-        Debug.Log("Options");
-        
+        TutorialMenu.SetActive(false);
     }
 
-    void Quit()
+    public void OptionsOn()
     {
-        Debug.Log("Quit");
+        OptionsMenu.SetActive(true);
+    }
+
+    public void OptionsOff()
+    {
+        OptionsMenu.SetActive(false);
+    }
+
+    public void ControllsOn()
+    {
+        ControllsMenu.SetActive(true);
+    }
+
+    public void ControllsOff()
+    {
+        ControllsMenu.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
         Application.Quit();
+        Debug.Log("Quit");
+    }
+
+    public void SetVolume(float volume)
+    {
+        AudioListener.volume = volume;
+        volumeTextValue.text = volume.ToString("0.0");
+    }
+
+    public void VolumeApply()
+    {
+        PlayerPrefs.SetFloat("masterVolume", AudioListener.volume);
+        Debug.Log("Applied Volume");
+    }
+
+    public void SetControllerSen(float sensitivity)
+    {
+        mainControllerSen = Mathf.RoundToInt(sensitivity);
+        ControllerSensitivityTextValue.text = sensitivity.ToString("0");
+    }
+
+    public void GameplayApply()
+    {
+        if (invertYToggle.isOn)
+        {
+            PlayerPrefs.SetInt("masterInvertY", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("masterInvertY", 0);
+        }
+
+        PlayerPrefs.SetFloat("masterSen", mainControllerSen);
+        Debug.Log("Applied Gamplay");
+    }
+
+    public void SetBrightness(float brightness)
+    {
+        _brightnessLevel = brightness;
+        brightnessTextValue.text = brightness.ToString("0.0");
+    }
+
+    public void SetFullScreen(bool isFullScreen)
+    {
+        _isFullScreen = isFullScreen;
+    }
+
+    public void SetQuality(int qualityIndex)
+    {
+        _qualityLevel = qualityIndex;
+    }
+
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    public void GraphicsApply()
+    {
+        PlayerPrefs.SetFloat("masterBrightness", _brightnessLevel);
+        PlayerPrefs.SetInt("masterQuality", _qualityLevel);
+        QualitySettings.SetQualityLevel(_qualityLevel);
+        PlayerPrefs.SetInt("masterFullscreen", (_isFullScreen ? 1 : 0));
+        Screen.fullScreen = _isFullScreen;
+        Debug.Log("Applied Graphics");
     }
 }
