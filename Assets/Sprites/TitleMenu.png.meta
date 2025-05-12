@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: f02efd29090c57445be2ea5e51f5c36e
+guid: 3d2932241c6ca8a4c80b0431cbaa0d89
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 559097910036261825
-    second: transferir-removebg-preview_0
+      213: 2075351990406487864
+    second: TitleMenu_0
+  - first:
+      213: 6048475058465394863
+    second: TitleMenu_1
+  - first:
+      213: 4910438138758025629
+    second: TitleMenu_2
+  - first:
+      213: 5799340944990006607
+    second: TitleMenu_3
+  - first:
+      213: -6458864126274676945
+    second: TitleMenu_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: transferir-removebg-preview_0
+      name: TitleMenu_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 6
-        width: 278
-        height: 162
+        x: 35
+        y: 144
+        width: 285
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cbef52469052c700800000000000000
-      internalID: 559097910036261825
+      spriteID: 83f141cb3a12dcc10800000000000000
+      internalID: 2075351990406487864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleMenu_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 118
+        width: 138
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0d3acf40080f350800000000000000
+      internalID: 6048475058465394863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleMenu_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 98
+        width: 66
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91d3387871652440800000000000000
+      internalID: 4910438138758025629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleMenu_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 98
+        width: 74
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4de18dfcd56b7050800000000000000
+      internalID: 5799340944990006607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TitleMenu_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 98
+        width: 105
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2752e43c418d56a0800000000000000
+      internalID: -6458864126274676945
       vertices: []
       indices: 
       edges: []
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      transferir-removebg-preview_0: 559097910036261825
+      TitleMenu_0: 2075351990406487864
+      TitleMenu_1: 6048475058465394863
+      TitleMenu_2: 4910438138758025629
+      TitleMenu_3: 5799340944990006607
+      TitleMenu_4: -6458864126274676945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
