@@ -1,16 +1,17 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class EnemyHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private int currentHealth;
 
-    public Animator animator;
-
+    [SerializeField] private Animator animator;
+    [SerializeField] private Image healthBar;
 
     void Start()
     {
         currentHealth = maxHealth;
+        SetHealthUI(currentHealth);
 
     }
 
@@ -19,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"{gameObject.name} levou {damage} de dano! Vida restante: {currentHealth}");
 
-
+        SetHealthUI(currentHealth);
         
         if (currentHealth <= 0)
         {
@@ -42,5 +43,11 @@ public class EnemyHealth : MonoBehaviour
         this.enabled = false;
         // Desativa o inimigo após animação
         //GetComponent<Collider2D>().enabled = false;
+    }
+
+    void SetHealthUI(int Health)
+    {
+        float targerFillAmount = (float)Health/maxHealth;
+        healthBar.fillAmount = targerFillAmount > 0 ? targerFillAmount : 0;
     }
 }
