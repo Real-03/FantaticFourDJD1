@@ -6047,6 +6047,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 302537404}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &302537402
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -6626,6 +6634,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 328155267}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &328155265
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -17633,6 +17649,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 530511615}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &530511613
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -18000,6 +18024,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 547379495}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &547379493
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -35025,6 +35057,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5190449415115579821, guid: 2ac14c2682b32754f84715ecb2881a34, type: 3}
   m_PrefabInstance: {fileID: 641922040}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &644816271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 644816272}
+  m_Layer: 6
+  m_Name: RotationPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &644816272
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644816271}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -92.74, y: -3.8, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &652366565
 GameObject:
   m_ObjectHideFlags: 0
@@ -35073,6 +35136,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 652366570}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &652366568
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -35599,6 +35670,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 789077839}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &789077837
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -35953,6 +36032,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 874084261}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &874084259
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -36479,6 +36566,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 919545748}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &919545746
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -52479,6 +52574,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1382063916}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &1382063914
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -52851,9 +52954,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 11.032
       objectReference: {fileID: 0}
+    - target: {fileID: 3311136742705175538, guid: 4294bf07ea503704995d692636897195, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9179657510641062500, guid: 4294bf07ea503704995d692636897195, type: 3}
       propertyPath: m_Name
       value: Bridge (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179657510641062500, guid: 4294bf07ea503704995d692636897195, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -52865,6 +52976,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1565086237994054103, guid: 4294bf07ea503704995d692636897195, type: 3}
   m_PrefabInstance: {fileID: 1382837858}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1425111074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1425111075}
+  m_Layer: 6
+  m_Name: ColliderPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1425111075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425111074}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.066681, y: 3.2316668, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1493598662}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1453019359
 GameObject:
   m_ObjectHideFlags: 0
@@ -52928,6 +53070,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1453019365}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &1453019363
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -53525,7 +53675,7 @@ GameObject:
   - component: {fileID: 1493598666}
   - component: {fileID: 1493598665}
   - component: {fileID: 1493598664}
-  - component: {fileID: 1493598663}
+  - component: {fileID: 1493598667}
   m_Layer: 0
   m_Name: WallColiders (16)
   m_TagString: Walls
@@ -53545,22 +53695,10 @@ Transform:
   m_LocalPosition: {x: -324.7, y: -6.63, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1425111075}
   m_Father: {fileID: 876951328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1493598663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493598661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f1529085030b5be40b06c32bf7bc2ccb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 1493598666}
 --- !u!19719996 &1493598664
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -53865,6 +54003,27 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1493598667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493598661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1529085030b5be40b06c32bf7bc2ccb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1493598666}
+  pivotPoint: {fileID: 644816272}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 1425111075}
+  colliderRange: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1494430862
 GameObject:
   m_ObjectHideFlags: 0
@@ -53945,6 +54104,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1532883870}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &1532883868
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -55304,6 +55471,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1864167914}
+  pivotPoint: {fileID: 0}
+  rotationSpeed: 90
+  rotationDuration: 3
+  colliderPoint: {fileID: 0}
+  colliderRange: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!19719996 &1864167912
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -100283,6 +100458,7 @@ SceneRoots:
   - {fileID: 2129322852}
   - {fileID: 1196435222}
   - {fileID: 304220484}
+  - {fileID: 644816272}
   - {fileID: 876951328}
   - {fileID: 229660850}
   - {fileID: 1481085344}
