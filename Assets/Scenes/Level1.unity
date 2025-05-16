@@ -6049,7 +6049,6 @@ MonoBehaviour:
   tilemap: {fileID: 302537404}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -6636,7 +6635,6 @@ MonoBehaviour:
   tilemap: {fileID: 328155267}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -12713,6 +12711,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1593497692}
+    - target: {fileID: 4057521768712615554, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
+      propertyPath: currentHealth
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5190449415115579821, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -105.344
@@ -17682,7 +17684,6 @@ MonoBehaviour:
   tilemap: {fileID: 530511615}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -18057,7 +18058,6 @@ MonoBehaviour:
   tilemap: {fileID: 547379495}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -35202,7 +35202,6 @@ MonoBehaviour:
   tilemap: {fileID: 652366570}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -35769,7 +35768,6 @@ MonoBehaviour:
   tilemap: {fileID: 789077839}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -36131,7 +36129,6 @@ MonoBehaviour:
   tilemap: {fileID: 874084261}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -36664,7 +36661,6 @@ MonoBehaviour:
   tilemap: {fileID: 919545748}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -47022,7 +47018,7 @@ Transform:
   m_GameObject: {fileID: 1051637027}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.098, y: 0.384, z: 0}
+  m_LocalPosition: {x: 0.0911, y: 0.384, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52823,7 +52819,6 @@ MonoBehaviour:
   tilemap: {fileID: 1382063916}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -53235,7 +53230,7 @@ GameObject:
   - component: {fileID: 1416014236}
   - component: {fileID: 1416014235}
   - component: {fileID: 1416014234}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TreeFall
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -53303,9 +53298,8 @@ MonoBehaviour:
   tilemap: {fileID: 0}
   pivotPoint: {fileID: 644816272}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 1051637028}
-  colliderRange: 0.2
+  colliderRange: 0.08
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -53446,7 +53440,6 @@ MonoBehaviour:
   tilemap: {fileID: 1453019365}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -54119,7 +54112,6 @@ MonoBehaviour:
   tilemap: {fileID: 1532883870}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
@@ -55486,7 +55478,6 @@ MonoBehaviour:
   tilemap: {fileID: 1864167914}
   pivotPoint: {fileID: 0}
   rotationSpeed: 90
-  rotationDuration: 3
   colliderPoint: {fileID: 0}
   colliderRange: 0.5
   groundLayer:
