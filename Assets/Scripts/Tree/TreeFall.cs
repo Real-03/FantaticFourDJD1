@@ -7,7 +7,6 @@ public class TreeFall : MonoBehaviour
     [SerializeField] private Tilemap tilemap; // Reference to the Tilemap
     [SerializeField] private Transform pivotPoint; // Point around which the tree will rotate
     [SerializeField] private float rotationSpeed = 90f; // Degrees per second
-    [SerializeField] private float rotationDuration = 3f; // Duration of rotation in seconds
 
     private bool isFalling = false;
     private float rotationTime = 0f;

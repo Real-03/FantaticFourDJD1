@@ -471,6 +471,8 @@ MonoBehaviour:
   currentHealth: 100
   animator: {fileID: 7413057703448221817}
   healthBar: {fileID: 2695340571686111594}
+  healthPickupPrefab: {fileID: 5517006139051860626, guid: 32d8410e2d6c4f743b78a1f1a5a2c639, type: 3}
+  dropChance: 0.3
 --- !u!114 &8103098734498308602
 MonoBehaviour:
   m_ObjectHideFlags: 0
