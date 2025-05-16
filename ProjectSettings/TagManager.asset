@@ -10,11 +10,12 @@ TagManager:
   - Platform
   - Walls
   - Thing
+  - Beacon
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Beacon
   - Water
   - UI
   - Ground
