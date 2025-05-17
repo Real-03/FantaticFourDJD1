@@ -6048,6 +6048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 302537404}
   pivotPoint: {fileID: 0}
@@ -6067,6 +6068,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &302537402
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -6647,6 +6650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 328155267}
   pivotPoint: {fileID: 0}
@@ -6666,6 +6670,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &328155265
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -12737,10 +12743,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1593497692}
-    - target: {fileID: 4057521768712615554, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
-      propertyPath: currentHealth
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 5190449415115579821, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -105.344
@@ -17709,6 +17711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 530511615}
   pivotPoint: {fileID: 0}
@@ -17728,6 +17731,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &530511613
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -18096,6 +18101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 547379495}
   pivotPoint: {fileID: 0}
@@ -18115,6 +18121,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &547379493
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -35253,6 +35261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 652366570}
   pivotPoint: {fileID: 0}
@@ -35272,6 +35281,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &652366568
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -35832,6 +35843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 789077839}
   pivotPoint: {fileID: 0}
@@ -35851,6 +35863,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &789077837
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -36206,6 +36220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 874084261}
   pivotPoint: {fileID: 0}
@@ -36225,6 +36240,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &874084259
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -36751,6 +36768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 919545748}
   pivotPoint: {fileID: 0}
@@ -36770,6 +36788,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &919545746
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -47122,7 +47142,7 @@ Transform:
   m_GameObject: {fileID: 1051637027}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0911, y: 0.384, z: 0}
+  m_LocalPosition: {x: 0.098, y: 0.384, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52922,6 +52942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 1382063916}
   pivotPoint: {fileID: 0}
@@ -52941,6 +52962,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &1382063914
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -53347,7 +53370,7 @@ GameObject:
   - component: {fileID: 1416014236}
   - component: {fileID: 1416014235}
   - component: {fileID: 1416014234}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: TreeFall
   m_TagString: Walls
   m_Icon: {fileID: 0}
@@ -53414,6 +53437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 0}
   pivotPoint: {fileID: 644816272}
@@ -53435,6 +53459,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!212 &1416014236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -53571,6 +53597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 1453019365}
   pivotPoint: {fileID: 0}
@@ -53590,6 +53617,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &1453019363
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -54256,6 +54285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 1532883870}
   pivotPoint: {fileID: 0}
@@ -54275,6 +54305,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &1532883868
 TilemapCollider2D:
   m_ObjectHideFlags: 0
@@ -55635,6 +55667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   tilemap: {fileID: 1864167914}
   pivotPoint: {fileID: 0}
@@ -55654,6 +55687,8 @@ MonoBehaviour:
 >>>>>>> 28df46a2e505da662d7ef93f375ef4dfc8939e6c
 =======
 >>>>>>> parent of ce73df0 (Updated beacon sys)
+=======
+>>>>>>> parent of 69739e1 (beacon sys update)
 --- !u!19719996 &1864167912
 TilemapCollider2D:
   m_ObjectHideFlags: 0
