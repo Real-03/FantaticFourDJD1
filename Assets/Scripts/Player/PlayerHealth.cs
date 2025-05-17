@@ -3,8 +3,8 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int currentHealth;
+    [SerializeField] private float maxHealth = 100;
+    [SerializeField] private float currentHealth;
     [SerializeField] private Image healthBar;
 
     private Animator animator;
@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage, Transform attacker)
+    public void TakeDamage(float damage, Transform attacker)
     {
         currentHealth -= damage;
         Debug.Log($"{gameObject.name} levou {damage} de dano! Vida restante: {currentHealth}");
@@ -52,8 +52,15 @@ public class PlayerHealth : MonoBehaviour
         gameObject.SetActive(false);
         this.enabled = false;
     }
+    public void HealPlayer(float amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        SetHealthUI(currentHealth);
 
-    void SetHealthUI(int Health)
+    }
+
+    void SetHealthUI(float Health)
     {
         float targerFillAmount = (float)Health/maxHealth;
         healthBar.fillAmount = targerFillAmount > 0 ? targerFillAmount : 0;

@@ -4,10 +4,12 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int currentHealth;
-
+    
     [SerializeField] private Animator animator;
     [SerializeField] private Image healthBar;
 
+    [SerializeField] private GameObject healthPickupPrefab;
+    [SerializeField] private float dropChance; //Range(0f, 1f)
     void Start()
     {
         currentHealth = maxHealth;
@@ -40,9 +42,19 @@ public class EnemyHealth : MonoBehaviour
         
         animator.SetTrigger("Die"); // Animação de cair/morrer
         gameObject.SetActive(false);
+        TryDropHealth();
         this.enabled = false;
         // Desativa o inimigo após animação
         //GetComponent<Collider2D>().enabled = false;
+    }
+
+    void TryDropHealth()
+    {
+        float rand = Random.value;
+        if (rand <= dropChance && healthPickupPrefab != null)
+        {
+            Instantiate(healthPickupPrefab, transform.position, Quaternion.identity);
+        }
     }
 
     void SetHealthUI(int Health)
