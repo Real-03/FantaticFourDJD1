@@ -4,30 +4,58 @@ using UnityEngine.Animations;
 
 public class BeaconScript : MonoBehaviour
 {
-    private Animation BeamAnim;
-    private Animation BeaconAnim;
-    public GameObject[] Beacons;
+    [Header("Deteção de Jogadores")]
+    public Transform detectPoint;
+    public Vector2 detectSize = new Vector2(3f, 0.5f);
+    public LayerMask playerLayer;
 
-    public void OnStart()
+    [Header("Efeitos")]
+    //public GameObject Beam;
+    //public GameObject Beacon;
+    public Animator animator;
+
+    private bool isActivating = false;
+    private bool Activated = false;
+
+    void Update()
     {
-        BeamAnim = GetComponent<Animation>();
-        BeaconAnim = GetComponent<Animation>();
+        Collider2D[] players = Physics2D.OverlapBoxAll(detectPoint.position, detectSize, 0f, playerLayer);
+        int playerCount = players.Length;
     }
 
-    public void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(BeamActive());
-            BeaconAnim.Play();
+            BeaconActivator();
         }
     }
 
-    IEnumerator BeamActive()
+    private void BeaconActivator()
     {
-        yield return new WaitForSeconds(0.2f);
-        BeamAnim.Play();
-        yield return new WaitForSeconds(0.2f);
-        BeamAnim.Stop();
+        isActivating = true;
+
+        if (animator != null)
+        {
+            animator.SetTrigger("isActivating");
+            animator.SetBool("Activated", true);
+            Activated = true;
+        }
+
+        // Desativa todos os colliders do Beacon
+        foreach (BoxCollider2D col in GetComponents<BoxCollider2D>())
+        {
+            col.enabled = false;
+        }
+    }
+
+
+
+    private void OnDrawGizmosSelected()
+    {
+        if (detectPoint == null) return;
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(detectPoint.position, detectSize);
     }
 }
