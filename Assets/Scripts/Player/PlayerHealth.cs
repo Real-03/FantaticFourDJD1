@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     private Animator animator;
     private PlayerMovement movementScript;
 
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Respawn respawnManager;
     
 
     void Start()
@@ -28,7 +30,8 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage;
         Debug.Log($"{gameObject.name} levou {damage} de dano! Vida restante: {currentHealth}");
-
+        
+        SpriteFlash.Flash(spriteRenderer, 0.2f, 1);
         SetHealthUI(currentHealth);
         
         if (currentHealth <= 0)
@@ -48,9 +51,7 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} morreu!");
         animator.SetTrigger("Die");
-        movementScript.enabled = false;
-        gameObject.SetActive(false);
-        this.enabled = false;
+        StartCoroutine(respawnManager.RespawnPlayer(this.gameObject));
     }
     public void HealPlayer(float amount)
     {
@@ -64,6 +65,11 @@ public class PlayerHealth : MonoBehaviour
     {
         float targerFillAmount = (float)Health/maxHealth;
         healthBar.fillAmount = targerFillAmount > 0 ? targerFillAmount : 0;
+    }
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        SetHealthUI(currentHealth);
     }
 
     private void OnAnimationEnd()
