@@ -4,7 +4,7 @@ using UnityEngine.Animations;
 
 public class BeaconScript : MonoBehaviour
 {
-    [Header("Deteção de Jogadores")]
+    [Header("Deteï¿½ï¿½o de Jogadores")]
     public Transform detectPoint;
     public Vector2 detectSize = new Vector2(3f, 0.5f);
     public LayerMask playerLayer;
@@ -16,6 +16,8 @@ public class BeaconScript : MonoBehaviour
 
     private bool isActivating = false;
     private bool Activated = false;
+
+    [SerializeField] private SpriteRenderer beaconRender;
 
     void Update()
     {
@@ -37,9 +39,11 @@ public class BeaconScript : MonoBehaviour
 
         if (animator != null)
         {
+            
             animator.SetTrigger("isActivating");
             animator.SetBool("Activated", true);
             Activated = true;
+            beaconRender.enabled = true;
         }
 
         // Desativa todos os colliders do Beacon
