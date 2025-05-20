@@ -5437,7 +5437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7102827f0663554439c9dabb1e0465d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canUse: 0
+  canUse: 1
   menuController: {fileID: 1942735256}
   volumeTextValue: {fileID: 447041151}
   volumeSlider: {fileID: 123623376}
