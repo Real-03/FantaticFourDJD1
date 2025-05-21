@@ -13,7 +13,7 @@ public class OutLimitsRespawn : MonoBehaviour
             // Só continua se tiver o componente PlayerMovement
             if (collision.gameObject.GetComponent<PlayerMovement>() != null)
             {
-                Respawn respawnScript = FindObjectOfType<Respawn>();
+                Respawn respawnScript = FindFirstObjectByType<Respawn>();
                 if (respawnScript != null)
                 {
                     StartCoroutine(respawnScript.RespawnPlayer(collision.gameObject));

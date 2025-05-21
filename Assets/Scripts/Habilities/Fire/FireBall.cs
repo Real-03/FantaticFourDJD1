@@ -3,15 +3,20 @@ using UnityEngine;
 
 public class FireBall : MonoBehaviour
 {
-   public float lifetime = 5f; // Tempo para autodestruição
+    public float lifetime = 5f; // Tempo para autodestruição
     private const string enemyTag = "Enemy"; // Tag dos Enemy
     private const string playerTag = "Player"; // Tag dos Player
 
+    private Animator animator;
+
+    private Rigidbody2D rb;
     void Start()
     {
         // Destroi a bola de fogo após X segundos se não atingir nada
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifetime);
-        
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -21,28 +26,37 @@ public class FireBall : MonoBehaviour
         switch (other.tag)
         {
             case playerTag:
-            {
-                break;
-            }
+                {
+                    break;
+                }
             case "Thing":
-            {
-                break;
-            }
+                {
+                    break;
+                }
             case enemyTag:
-            {
-                EnemyHealth enemyhealth =other.gameObject.GetComponent<EnemyHealth>();
-                enemyhealth.TakeDamage(50, other.gameObject.transform);
-                Destroy(gameObject);
-                break;
-            }
+                {
+                    rb.linearVelocity = new Vector2(0, 0);
+                    animator.SetBool("Explosion", true);
+                    EnemyHealth enemyhealth = other.gameObject.GetComponent<EnemyHealth>();
+                    enemyhealth.TakeDamage(50, other.gameObject.transform);
+
+
+                    break;
+                }
             default:
-            {
-                Destroy(gameObject);
-                break;
-            }
-                
+                {
+                    rb.linearVelocity = new Vector2(0, 0);
+                    animator.SetBool("Explosion", true);
+                    break;
+                }
+
         }
 
+    }
+    
+    public void DestroyMe()
+    {
+        Destroy(gameObject);
     }
 
 }

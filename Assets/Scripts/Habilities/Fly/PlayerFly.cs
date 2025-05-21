@@ -3,14 +3,15 @@ using System.Collections;
 using UnityEngine.UI;
 public class PlayerFly : MonoBehaviour
 {
-    public float flySpeed = 5f;               // Velocidade de voo
-    public float flightTime = 5f;             // Tempo máximo de voo
-    public float cooldownFlightTime = 5f;  
+    [SerializeField] private float flySpeed = 5f;               // Velocidade de voo
+    [SerializeField] private float flightTime = 5f;             // Tempo máximo de voo
+    [SerializeField] private float cooldownFlightTime = 5f;  
     private bool isFlying = false;            
     private Rigidbody2D rb;
     private PlayerMovement playerMovementScript;
     [SerializeField] private Animator animator;
     [SerializeField] private Image flightCooldownUI;
+    [SerializeField] private ParticleSystem particle;
 
     void Start()
     {
@@ -35,7 +36,7 @@ public class PlayerFly : MonoBehaviour
         rb.gravityScale = 0;
 
         float Timer = flightTime;
-        
+        particle.Play();
         while (Timer > 0)
         {
             float vertical = Input.GetAxis("Jump_P2");
@@ -53,6 +54,7 @@ public class PlayerFly : MonoBehaviour
             UpdateCooldownUI(Timer);
             yield return null;
         }
+        particle.Stop();
         animator.SetBool("Fly", !isFlying);
         rb.gravityScale =1;
         playerMovementScript.enabled = true;
