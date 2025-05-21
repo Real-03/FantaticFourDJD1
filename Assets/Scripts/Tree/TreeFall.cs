@@ -7,6 +7,8 @@ public class TreeFall : MonoBehaviour
     [SerializeField] private Tilemap tilemap; // Reference to the Tilemap
     [SerializeField] private Transform pivotPoint; // Point around which the tree will rotate
     [SerializeField] private float rotationSpeed = 90f; // Degrees per second
+    [SerializeField] private AudioSource AudioSource;
+    [SerializeField] private AudioClip TreeFallSound;
 
     private bool isFalling = false;
 
@@ -15,12 +17,18 @@ public class TreeFall : MonoBehaviour
 
     [SerializeField] private LayerMask groundLayer;
 
+    private void Start()
+    {
+        AudioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
         if (isFalling)
         {
             float step = rotationSpeed * Time.deltaTime;
             transform.RotateAround(pivotPoint.position, Vector3.back, step);
+            AudioSource.PlayOneShot(TreeFallSound);
             DetectGround();
         }
     }

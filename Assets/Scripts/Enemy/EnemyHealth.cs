@@ -10,10 +10,15 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] private GameObject healthPickupPrefab;
     [SerializeField] private float dropChance; //Range(0f, 1f)
+
+    [SerializeField] private AudioClip DamageSound;
+    [SerializeField] private AudioSource AudioSource;
+
     void Start()
     {
         currentHealth = maxHealth;
         SetHealthUI(currentHealth);
+        AudioSource = GetComponent<AudioSource>();
 
     }
 
@@ -33,6 +38,7 @@ public class EnemyHealth : MonoBehaviour
             animator.SetTrigger("Hit");
             Vector2 knockback = (transform.position - attacker.position).normalized;
             GetComponent<Rigidbody2D>().AddForce(knockback * 100f);
+            AudioSource.PlayOneShot(DamageSound);
         }
     }
 

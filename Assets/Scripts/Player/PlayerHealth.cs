@@ -6,6 +6,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100;
     [SerializeField] private float currentHealth;
     [SerializeField] private Image healthBar;
+    [SerializeField] private AudioClip DamageSound;
+    [SerializeField] private AudioSource AudioSource;
 
     private Animator animator;
     private PlayerMovement movementScript;
@@ -19,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         movementScript = GetComponent<PlayerMovement>();
         animator = GetComponent<Animator>();
+        AudioSource = GetComponent<AudioSource>();
 
         if (healthBar != null)
         {
@@ -41,7 +44,7 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             animator.SetTrigger("Hit");
-            
+            AudioSource.PlayOneShot(DamageSound);
         }
 
 

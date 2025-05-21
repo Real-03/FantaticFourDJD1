@@ -9,6 +9,7 @@ public class Dash : MonoBehaviour
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float dashCooldown = 2f;
     [SerializeField] private KeyCode dashKey = KeyCode.E;
+    [SerializeField] private AudioSource dashSound;
 
     [Header("References")]
     [SerializeField] private Image dashCooldownUI;
@@ -46,6 +47,7 @@ public class Dash : MonoBehaviour
 
         float startTime = Time.time;
         Vector2 dashDirection = transform.right.normalized;
+        dashSound.Play();
 
         // Desativa gravidade para manter o dash reto
         rb.gravityScale = 0;
