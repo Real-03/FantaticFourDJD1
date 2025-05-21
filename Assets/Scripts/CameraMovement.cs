@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform player1;
-    public Transform player2;
-    public float minZoom = 5f;
-    public float maxZoom = 15f;
-    public float zoomSpeed = 5f;
-    public float followSpeed = 5f;
-    public float maxDistance = 10f;
+    [SerializeField] private Transform player1;
+    [SerializeField] private Transform player2;
+    [SerializeField] private float minZoom = 5f;
+    [SerializeField] private float maxZoom = 15f;
+    [SerializeField] private float zoomSpeed = 5f;
+    [SerializeField] private float followSpeed = 5f;
+    [SerializeField] private float maxDistance = 10f;
     
     private Camera cam;
     private Vector3 lastValidPosition;
