@@ -1630,6 +1630,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3632081115348288043, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
+      propertyPath: FiraBallLeft
+      value: 
+      objectReference: {fileID: 5943081478332804940, guid: f8bf45b579190a3478ad0235ccac723c, type: 3}
     - target: {fileID: 4057521768712615554, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
       propertyPath: healthBar
       value: 
@@ -25023,71 +25027,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1574590737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &734405478
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -100.426796
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.7822238
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3278034183050180496, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5296189477488290763, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_Radius
-      value: 0.101991735
-      objectReference: {fileID: 0}
-    - target: {fileID: 5296189477488290763, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0804669
-      objectReference: {fileID: 0}
-    - target: {fileID: 5943081478332804940, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-      propertyPath: m_Name
-      value: FireBallRight (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
 --- !u!4 &743396255 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5190449415115579821, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
@@ -82636,5 +82575,4 @@ SceneRoots:
   - {fileID: 549955734}
   - {fileID: 324863754}
   - {fileID: 1312489069}
-  - {fileID: 734405478}
   - {fileID: 880335502}
