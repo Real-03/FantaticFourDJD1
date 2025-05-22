@@ -9,7 +9,7 @@ TagManager:
   - Enemy
   - Platform
   - Walls
-  - Thing
+  - Hability
   layers:
   - Default
   - TransparentFX

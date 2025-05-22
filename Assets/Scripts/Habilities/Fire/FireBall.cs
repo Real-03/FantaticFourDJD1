@@ -6,15 +6,19 @@ public class FireBall : MonoBehaviour
     public float lifetime = 5f; // Tempo para autodestruição
     private const string enemyTag = "Enemy"; // Tag dos Enemy
     private const string playerTag = "Player"; // Tag dos Player
+    
+    private const string habilityTag = "Hability"; // Tag das Hability
+    
 
     private Animator animator;
 
     private Rigidbody2D rb;
     void Start()
     {
-        // Destroi a bola de fogo após X segundos se não atingir nada
+        
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        // Destroi a bola de fogo após X segundos se não atingir nada
         Destroy(gameObject, lifetime);
 
     }
@@ -22,14 +26,15 @@ public class FireBall : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        // Se tocar no Player, ignora a colisão com ele
+        
         switch (other.tag)
         {
-            case playerTag:
+            
+            case playerTag:// Se tocar no Player, ignora a colisão com ele
                 {
                     break;
                 }
-            case "Thing":
+            case habilityTag:// Se tocar nuam Hability, ignora a colisão com ela
                 {
                     break;
                 }
