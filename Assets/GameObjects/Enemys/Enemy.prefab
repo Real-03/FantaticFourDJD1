@@ -303,8 +303,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6753108538869033028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9, y: -4.792, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -210.44075, y: -5.0829616, z: 0.039639432}
   m_LocalScale: {x: 3, y: 3, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -476,6 +476,7 @@ MonoBehaviour:
   dropChance: 0.3
   DamageSound: {fileID: 8300000, guid: d374ec2186de7234bb3fe0828ee1d823, type: 3}
   AudioSource: {fileID: 2055222505826880836}
+  updateScoreUI: {fileID: 0}
 --- !u!114 &8103098734498308602
 MonoBehaviour:
   m_ObjectHideFlags: 0

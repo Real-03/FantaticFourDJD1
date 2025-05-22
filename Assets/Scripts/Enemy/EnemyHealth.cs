@@ -14,12 +14,13 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private AudioClip DamageSound;
     [SerializeField] private AudioSource AudioSource;
 
+    private UpdateScoreUI updateScoreUI;
     void Start()
     {
         currentHealth = maxHealth;
         SetHealthUI(currentHealth);
         AudioSource = GetComponent<AudioSource>();
-
+        updateScoreUI = FindFirstObjectByType<UpdateScoreUI>();
     }
 
     public void TakeDamage(int damage, Transform attacker)
@@ -28,10 +29,11 @@ public class EnemyHealth : MonoBehaviour
         Debug.Log($"{gameObject.name} levou {damage} de dano! Vida restante: {currentHealth}");
 
         SetHealthUI(currentHealth);
-        
+
         if (currentHealth <= 0)
         {
             Die();
+            
         }
         else
         {
@@ -49,7 +51,9 @@ public class EnemyHealth : MonoBehaviour
         animator.SetTrigger("Die"); // Animação de cair/morrer
         gameObject.SetActive(false);
         TryDropHealth();
-        this.enabled = false;
+        GameData.score += 100;
+        updateScoreUI.ScoreChangeUI();
+        Destroy(this);
         // Desativa o inimigo após animação
         //GetComponent<Collider2D>().enabled = false;
     }
