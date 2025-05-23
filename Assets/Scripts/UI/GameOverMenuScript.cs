@@ -23,10 +23,13 @@ public class GameOverMenuScript : MonoBehaviour
     [Header("Scenes Settings")]
     [SerializeField] private int GameScene;
 
+    private GameData gameData;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Selection = 1;
+        gameData = FindFirstObjectByType<GameData>();
     }
 
     // Update is called once per frame
@@ -67,6 +70,7 @@ public class GameOverMenuScript : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                gameData.ResetScore();
                 SceneManager.LoadScene(0);
             }
         }
@@ -80,6 +84,7 @@ public class GameOverMenuScript : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return))
             {
+                gameData.ResetScore();
                 SceneManager.LoadScene(GameScene);
             }
         }

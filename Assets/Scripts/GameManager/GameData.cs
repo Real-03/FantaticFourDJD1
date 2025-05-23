@@ -7,6 +7,8 @@ public class GameData : MonoBehaviour
     public float GetScore() => score;
     
     public float SetScore(float value) => score+=value;
+
+    public float ResetScore() => score=0;
     static GameData _instance;
 
     public static GameData Instance => _instance;
