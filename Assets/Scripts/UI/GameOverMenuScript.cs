@@ -5,15 +5,83 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenuScript : MonoBehaviour
 {
-    public void Restart()
+    float Selection = 2;
+
+    //Play Button Sprites
+    [Space(10)]
+    [Header("Restart Button")]
+    [SerializeField] private GameObject RestartOff;
+    [SerializeField] private GameObject RestartOn;
+
+    //Title Button Sprites
+    [Space(10)]
+    [Header("Title Button")]
+    [SerializeField] private GameObject TitleOff;
+    [SerializeField] private GameObject TitleOn;
+
+    [Space(10)]
+    [Header("Scenes Settings")]
+    [SerializeField] private int GameScene;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
-        Debug.Log("Restart Game");
-        SceneManager.LoadScene(1);
+        Selection = 1;
     }
 
-    public void Title()
+    // Update is called once per frame
+    void Update()
     {
-        Debug.Log("Title Screen");
-        SceneManager.LoadScene(0);
+        if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        {
+            if (Selection <= 2)
+            {
+                Selection++;
+            }
+
+            if (Selection > 2)
+            {
+                Selection = 1;
+            }
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        {
+            if (Selection >= 1)
+            {
+                Selection--;
+            }
+
+            if (Selection < 1)
+            {
+                Selection = 2;
+            }
+        }
+
+        if (Selection == 1)
+        {
+            RestartOff.SetActive(true);
+            RestartOn.SetActive(false);
+            TitleOff.SetActive(false);
+            TitleOn.SetActive(true);
+
+            if (Input.GetKeyUp(KeyCode.Return))
+            {
+                SceneManager.LoadScene(0);
+            }
+        }
+
+        if (Selection == 2)
+        {
+            RestartOff.SetActive(false);
+            RestartOn.SetActive(true);
+            TitleOff.SetActive(true);
+            TitleOn.SetActive(false);
+
+            if (Input.GetKeyUp(KeyCode.Return))
+            {
+                SceneManager.LoadScene(GameScene);
+            }
+        }
     }
 }
