@@ -103,6 +103,7 @@ public class ButtonsScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 MenuScreen.SetActive(false);
+                OptionsScreen.SetActive(false);
                 HTP_Screen.SetActive(true);
             }
         }

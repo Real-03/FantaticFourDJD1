@@ -74,7 +74,7 @@ public class OptionsController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             if (Selection <= 2)
             {
@@ -87,7 +87,7 @@ public class OptionsController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             if (Selection >= 1)
             {
@@ -107,7 +107,7 @@ public class OptionsController : MonoBehaviour
             ControlsOff.SetActive(false);
             ControlsOn.SetActive(true);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 OptionsMenu.SetActive(false);
                 ControlMenu.SetActive(true);
@@ -121,13 +121,13 @@ public class OptionsController : MonoBehaviour
             ControlsOff.SetActive(true);
             ControlsOn.SetActive(false);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
+                OptionsMenu.SetActive(false);
+                MainMenu.SetActive(true);
                 VolumeApply();
                 GameplayApply();
                 GraphicsApply();
-                OptionsMenu.SetActive(false);
-                MainMenu.SetActive(true);
             }
         }
     }

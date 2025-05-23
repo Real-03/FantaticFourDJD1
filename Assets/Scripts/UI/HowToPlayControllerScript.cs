@@ -25,7 +25,7 @@ public class HowToPlayControllerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             if (Selection <= 2)
             {
@@ -38,7 +38,7 @@ public class HowToPlayControllerScript : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             if (Selection >= 1)
             {
@@ -56,7 +56,7 @@ public class HowToPlayControllerScript : MonoBehaviour
             BackOff.SetActive(false);
             BackOn.SetActive(true);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 HTP_Screen.SetActive(false);
                 MenuScreen.SetActive(true);
