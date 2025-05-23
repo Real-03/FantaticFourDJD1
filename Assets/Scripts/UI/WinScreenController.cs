@@ -31,7 +31,7 @@ public class WinScreenController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             if (Selection <= 2)
             {
@@ -44,7 +44,7 @@ public class WinScreenController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             if (Selection >= 1)
             {
@@ -64,7 +64,7 @@ public class WinScreenController : MonoBehaviour
             TitleOff.SetActive(true);
             TitleOn.SetActive(false);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(GameScene);
             }
@@ -77,7 +77,7 @@ public class WinScreenController : MonoBehaviour
             TitleOff.SetActive(false);
             TitleOn.SetActive(true);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(0);
             }

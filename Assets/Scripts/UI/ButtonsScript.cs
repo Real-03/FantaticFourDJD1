@@ -46,7 +46,7 @@ public class ButtonsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.S))
         {
             if (Selection <= 4)
             {
@@ -59,7 +59,7 @@ public class ButtonsScript : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
         {
             if (Selection >= 1)
             {
@@ -83,7 +83,7 @@ public class ButtonsScript : MonoBehaviour
             QuitOff.SetActive(true);
             QuitOn.SetActive(false);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(GameScene);
             }
@@ -100,7 +100,7 @@ public class ButtonsScript : MonoBehaviour
             QuitOff.SetActive(true);
             QuitOn.SetActive(false);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 MenuScreen.SetActive(false);
                 HTP_Screen.SetActive(true);
@@ -118,7 +118,7 @@ public class ButtonsScript : MonoBehaviour
             QuitOff.SetActive(true);
             QuitOn.SetActive(false);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 MenuScreen.SetActive(false);
                 OptionsScreen.SetActive(true);
@@ -136,7 +136,7 @@ public class ButtonsScript : MonoBehaviour
             QuitOff.SetActive(false);
             QuitOn.SetActive(true);
 
-            if (Input.GetKeyUp(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 Debug.Log("Quit");
                 Application.Quit();

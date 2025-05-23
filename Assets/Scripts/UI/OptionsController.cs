@@ -123,11 +123,11 @@ public class OptionsController : MonoBehaviour
 
             if (Input.GetKeyUp(KeyCode.Return))
             {
-                OptionsMenu.SetActive(false);
-                MainMenu.SetActive(true);
                 VolumeApply();
                 GameplayApply();
                 GraphicsApply();
+                OptionsMenu.SetActive(false);
+                MainMenu.SetActive(true);
             }
         }
     }
