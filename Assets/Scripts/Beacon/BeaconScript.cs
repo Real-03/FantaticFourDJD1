@@ -18,6 +18,13 @@ public class BeaconScript : MonoBehaviour
     private bool Activated = false;
 
     [SerializeField] private SpriteRenderer beaconRender;
+    [SerializeField] private AudioClip beaconSound;
+    [SerializeField] private AudioSource AudioSource;
+
+    private void Start()
+    {
+        AudioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -39,7 +46,7 @@ public class BeaconScript : MonoBehaviour
 
         if (animator != null)
         {
-            
+            AudioSource.PlayOneShot(beaconSound);
             animator.SetTrigger("isActivating");
             animator.SetBool("Activated", true);
             Activated = true;

@@ -15,20 +15,12 @@ public class LoadPrefs : MonoBehaviour
     [SerializeField] private Text volumeTextValue = null;
     [SerializeField] private Slider volumeSlider = null;
 
-    [Header("Brightness Setting")]
-    [SerializeField] private Slider brightnessSlider = null;
-    [SerializeField] private Text brightnessTextValue = null;
-
     [Header("Quality Setting")]
     [SerializeField] private Dropdown qualityDropdown;
 
     [Header("Fullscreen Setting")]
     [SerializeField] private Toggle fullScreenToggle;
-
-    [Header("Sensitivty Setting")]
-    [SerializeField] private Text ControllerSensitivityTextValue = null;
-    [SerializeField] private Slider ControllerSenSlider = null;
-
+    
     [Header("Invert Y Setting")]
     [SerializeField] private Toggle invertYToggle = null;
 
@@ -70,23 +62,6 @@ public class LoadPrefs : MonoBehaviour
                     Screen.fullScreen = false;
                     fullScreenToggle.isOn = false;
                 }
-            }
-
-            if (PlayerPrefs.HasKey("masterBrightness"))
-            {
-                float localBrightness = PlayerPrefs.GetFloat("masterbrightness");
-
-                brightnessTextValue.text = localBrightness.ToString("0.0");
-                brightnessSlider.value = localBrightness;
-            }
-
-            if (PlayerPrefs.HasKey("masterSen"))
-            {
-                float localSensitivity = PlayerPrefs.GetFloat("masterSen");
-
-                ControllerSensitivityTextValue.text = localSensitivity.ToString("0");
-                ControllerSenSlider.value = localSensitivity;
-                menuController.mainControllerSen = Mathf.RoundToInt(localSensitivity);
             }
 
             if (PlayerPrefs.HasKey("masterInvertY"))

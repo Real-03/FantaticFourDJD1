@@ -1,26 +1,20 @@
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WinScreenController : MonoBehaviour
+public class HowToPlayControllerScript : MonoBehaviour
 {
     float Selection = 2;
 
     //Play Button Sprites
     [Space(10)]
-    [Header("Replay Button")]
-    [SerializeField] private GameObject ReplayOff;
-    [SerializeField] private GameObject ReplayOn;
-
-    //Title Button Sprites
-    [Space(10)]
-    [Header("Title Button")]
-    [SerializeField] private GameObject TitleOff;
-    [SerializeField] private GameObject TitleOn;
+    [Header("Back Button")]
+    [SerializeField] private GameObject BackOff;
+    [SerializeField] private GameObject BackOn;
 
     [Space(10)]
     [Header("Scenes Settings")]
-    [SerializeField] private int GameScene;
+    [SerializeField] private GameObject HTP_Screen;
+    [SerializeField] private GameObject MenuScreen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -59,28 +53,20 @@ public class WinScreenController : MonoBehaviour
 
         if (Selection == 1)
         {
-            ReplayOff.SetActive(false);
-            ReplayOn.SetActive(true);
-            TitleOff.SetActive(true);
-            TitleOn.SetActive(false);
+            BackOff.SetActive(false);
+            BackOn.SetActive(true);
 
             if (Input.GetKeyUp(KeyCode.Return))
             {
-                SceneManager.LoadScene(GameScene);
+                HTP_Screen.SetActive(false);
+                MenuScreen.SetActive(true);
             }
         }
 
-        if (Selection == 2)
+        if(Selection == 2)
         {
-            ReplayOff.SetActive(true);
-            ReplayOn.SetActive(false);
-            TitleOff.SetActive(false);
-            TitleOn.SetActive(true);
-
-            if (Input.GetKeyUp(KeyCode.Return))
-            {
-                SceneManager.LoadScene(0);
-            }
-        }     
+            BackOff.SetActive(true);
+            BackOn.SetActive(false);
+        }
     }
 }
