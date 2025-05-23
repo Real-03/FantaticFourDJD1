@@ -15,12 +15,14 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private AudioSource AudioSource;
 
     private UpdateScoreUI updateScoreUI;
+    private GameData gameData;
     void Start()
     {
         currentHealth = maxHealth;
         SetHealthUI(currentHealth);
         AudioSource = GetComponent<AudioSource>();
         updateScoreUI = FindFirstObjectByType<UpdateScoreUI>();
+        gameData = FindFirstObjectByType<GameData>();
     }
 
     public void TakeDamage(int damage, Transform attacker)
@@ -52,7 +54,7 @@ public class EnemyHealth : MonoBehaviour
         animator.SetTrigger("Die"); // Animação de cair/morrer
         gameObject.SetActive(false);
         TryDropHealth();
-        GameData.score += 100;
+        gameData.SetScore(100.0f);
         updateScoreUI.ScoreChangeUI();
         Destroy(this);
         // Desativa o inimigo após animação
