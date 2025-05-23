@@ -1767,10 +1767,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3632081115348288043, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
-      propertyPath: FiraBallLeft
-      value: 
-      objectReference: {fileID: 5943081478332804940, guid: f8bf45b579190a3478ad0235ccac723c, type: 3}
     - target: {fileID: 4057521768712615554, guid: 93581ae5eba225246bf52d68a3bb010a, type: 3}
       propertyPath: healthBar
       value: 

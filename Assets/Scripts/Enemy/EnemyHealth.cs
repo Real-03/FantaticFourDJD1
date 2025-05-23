@@ -48,6 +48,7 @@ public class EnemyHealth : MonoBehaviour
     {
         Debug.Log($"{gameObject.name} morreu!");
         
+        AudioSource.PlayOneShot(DamageSound);
         animator.SetTrigger("Die"); // Animação de cair/morrer
         gameObject.SetActive(false);
         TryDropHealth();

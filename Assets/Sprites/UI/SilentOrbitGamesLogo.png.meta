@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 0e91970d28916ad4dbf7051356b4afe2
+guid: 6078164afafe49d469ee29024b962f0b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2075351990406487864
-    second: TitleMenu_0
-  - first:
-      213: 6048475058465394863
-    second: TitleMenu_1
-  - first:
-      213: 4910438138758025629
-    second: TitleMenu_2
-  - first:
-      213: 5799340944990006607
-    second: TitleMenu_3
-  - first:
-      213: -6458864126274676945
-    second: TitleMenu_4
+      213: 7714703058388336549
+    second: 23 de mai. de 2025, 10_23_29_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -138,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TitleMenu_0
+      name: 23 de mai. de 2025, 10_23_29_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 144
-        width: 285
-        height: 27
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,96 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83f141cb3a12dcc10800000000000000
-      internalID: 2075351990406487864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TitleMenu_1
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 118
-        width: 138
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa0d3acf40080f350800000000000000
-      internalID: 6048475058465394863
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TitleMenu_2
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 98
-        width: 66
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d91d3387871652440800000000000000
-      internalID: 4910438138758025629
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TitleMenu_3
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 98
-        width: 74
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f4de18dfcd56b7050800000000000000
-      internalID: 5799340944990006607
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TitleMenu_4
-      rect:
-        serializedVersion: 2
-        x: 195
-        y: 98
-        width: 105
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2752e43c418d56a0800000000000000
-      internalID: -6458864126274676945
+      spriteID: 5af3bdeae81201b60800000000000000
+      internalID: 7714703058388336549
       vertices: []
       indices: 
       edges: []
@@ -251,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TitleMenu_0: 2075351990406487864
-      TitleMenu_1: 6048475058465394863
-      TitleMenu_2: 4910438138758025629
-      TitleMenu_3: 5799340944990006607
-      TitleMenu_4: -6458864126274676945
+      23 de mai. de 2025, 10_23_29_0: 7714703058388336549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,8 +43,8 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
-            animator.SetTrigger("Hit");
             AudioSource.PlayOneShot(DamageSound);
+            animator.SetTrigger("Hit");
         }
 
 
@@ -52,6 +52,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        AudioSource.PlayOneShot(DamageSound);
         Debug.Log($"{gameObject.name} morreu!");
         animator.SetTrigger("Die");
         StartCoroutine(respawnManager.RespawnPlayer(this.gameObject));

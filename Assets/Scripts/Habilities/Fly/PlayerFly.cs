@@ -12,9 +12,12 @@ public class PlayerFly : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private Image flightCooldownUI;
     [SerializeField] private ParticleSystem particle;
+    [SerializeField] private AudioClip flightSound;
+    [SerializeField] private AudioSource AudioSource;
 
     void Start()
     {
+        AudioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>(); 
         playerMovementScript =  GetComponent<PlayerMovement>();
     }
@@ -52,9 +55,13 @@ public class PlayerFly : MonoBehaviour
             rb.linearVelocity = new Vector2(horizontal*flySpeed, vertical * flySpeed);
             Timer -= Time.deltaTime;
             UpdateCooldownUI(Timer);
+            AudioSource.PlayOneShot(flightSound);
+            AudioSource.loop = true;
             yield return null;
         }
         particle.Stop();
+        AudioSource.Stop();
+        AudioSource.loop = false;
         animator.SetBool("Fly", !isFlying);
         rb.gravityScale =1;
         playerMovementScript.enabled = true;

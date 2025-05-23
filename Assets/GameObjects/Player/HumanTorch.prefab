@@ -5132,6 +5132,8 @@ MonoBehaviour:
   animator: {fileID: 668291476140572395}
   flightCooldownUI: {fileID: 0}
   particle: {fileID: 2344201828026554096}
+  flightSound: {fileID: 8300000, guid: 79816a91de120f248ba9dd029b4c2344, type: 3}
+  AudioSource: {fileID: 5355340947000261697}
 --- !u!114 &3632081115348288043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5145,7 +5147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FireBallRight: {fileID: 5943081478332804940, guid: 9db852c51b7f9974fa67288d6f667895, type: 3}
-  FiraBallLeft: {fileID: 5943081478332804940, guid: e797de764e947d14382d12dbec50a42a, type: 3}
+  FiraBallLeft: {fileID: 5943081478332804940, guid: f8bf45b579190a3478ad0235ccac723c, type: 3}
   firePoint: {fileID: 3713097159551777297}
   fireballSpeed: 10
   shootKey: 106
