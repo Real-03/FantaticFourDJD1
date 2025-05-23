@@ -14,7 +14,7 @@ public class PlayerFly : MonoBehaviour
     [SerializeField] private ParticleSystem particle;
     [SerializeField] private AudioClip flightSound;
     [SerializeField] private AudioSource AudioSource;
-
+    private string jumpAxisName =  "Jump_P2";
     void Start()
     {
         AudioSource = GetComponent<AudioSource>();
@@ -23,14 +23,14 @@ public class PlayerFly : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Period) && !isFlying)
+        if (Input.GetButtonDown(jumpAxisName) && !isFlying && playerMovementScript.GetGrouncCheck() == false)
         {
 
-            StartCoroutine(PerformDash());
+            StartCoroutine(PerformFly());
         }
     }
 
-    private IEnumerator PerformDash()
+    private IEnumerator PerformFly()
     {
         Debug.Log("Start");
         animator.SetBool("Fly", !isFlying);
