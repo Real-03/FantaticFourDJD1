@@ -7686,7 +7686,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1682069500}
   - component: {fileID: 1682069502}
-  - component: {fileID: 1682069501}
   m_Layer: 0
   m_Name: HTPMenuController
   m_TagString: Untagged
@@ -7709,22 +7708,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1121785276}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1682069501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1682069499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b067cbddab123d42bac505d730829dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BackOff: {fileID: 445755535}
-  BackOn: {fileID: 953073523}
-  ControlMenu: {fileID: 1891650460}
-  OptionsMenu: {fileID: 1437857109}
 --- !u!114 &1682069502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7741,6 +7724,7 @@ MonoBehaviour:
   BackOn: {fileID: 23294613}
   HTP_Screen: {fileID: 260887941}
   MenuScreen: {fileID: 1490576854}
+  OptionsScreen: {fileID: 1437857109}
 --- !u!1 &1702061063
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class HowToPlayControllerScript : MonoBehaviour
     [Header("Scenes Settings")]
     [SerializeField] private GameObject HTP_Screen;
     [SerializeField] private GameObject MenuScreen;
+    [SerializeField] private GameObject OptionsScreen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,6 +59,7 @@ public class HowToPlayControllerScript : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Escape))
             {
+                OptionsScreen.SetActive(false);
                 HTP_Screen.SetActive(false);
                 MenuScreen.SetActive(true);
             }

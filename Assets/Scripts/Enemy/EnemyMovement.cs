@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -47,7 +48,7 @@ public class EnemyMovement : MonoBehaviour
         else if (Vector2.Distance(transform.position, targetPlayer.position) <= visionRange)
         {
             // Jogador dentro da visão -> perseguir
-            AudioSource.PlayOneShot(WalkSound);
+            StartCoroutine(WalkSoundPlay());
             Vector2 direction = (targetPlayer.position - transform.position).normalized;
             rb.linearVelocity = new Vector2(direction.x * moveSpeed, rb.linearVelocity.y);
 
@@ -100,5 +101,11 @@ public class EnemyMovement : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
+    }
+
+    IEnumerator WalkSoundPlay()
+    {
+        yield return new WaitForSeconds(1);
+        AudioSource.PlayOneShot(WalkSound);
     }
 }
