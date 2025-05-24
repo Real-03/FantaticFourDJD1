@@ -21,9 +21,14 @@ public class BeaconScript : MonoBehaviour
     [SerializeField] private AudioClip beaconSound;
     [SerializeField] private AudioSource AudioSource;
 
+    private GameData gameData;
+    private UpdateMissionValues updateMissionValues;
+
     private void Start()
     {
         AudioSource = GetComponent<AudioSource>();
+        gameData = FindFirstObjectByType<GameData>();
+        updateMissionValues = FindFirstObjectByType<UpdateMissionValues>();
     }
 
     void Update()
@@ -43,7 +48,8 @@ public class BeaconScript : MonoBehaviour
     private void BeaconActivator()
     {
         isActivating = true;
-
+        gameData.SetBeacons();
+        updateMissionValues.MissionChangeUI();
         if (animator != null)
         {
             AudioSource.PlayOneShot(beaconSound);
