@@ -1,56 +1,28 @@
 using UnityEngine;
-using System.Linq;
-using System.Collections;
+
 public class OutLimitsRespawn : MonoBehaviour
 {
-    public float respawnDelay = 2f; // Tempo antes do respawn
-    public GameObject Spawn;
+    // Layer que queremos detectar (defina no Inspector)
+    public LayerMask respawnLayers;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) // Apenas os jogadores ativam o respawn
+        // Verifica se o layer do objeto está dentro do respawnLayers
+        if (((1 << collision.gameObject.layer) & respawnLayers) != 0)
         {
-            StartCoroutine(RespawnPlayer(collision.gameObject));
-
+            // Só continua se tiver o componente PlayerMovement
+            if (collision.gameObject.GetComponent<PlayerMovement>() != null)
+            {
+                Respawn respawnScript = FindFirstObjectByType<Respawn>();
+                if (respawnScript != null)
+                {
+                    StartCoroutine(respawnScript.RespawnPlayer(collision.gameObject));
+                }
+                else
+                {
+                    Debug.LogWarning("Script de Respawn não encontrado");
+                }
+            }
         }
-        else if (collision.CompareTag("Thing")) // Apenas os jogadores ativam o respawn
-        {
-            StartCoroutine(RespawnPlayer(collision.gameObject));
-            PlayerMovement playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
-        }
-    }
-
-    private IEnumerator RespawnPlayer(GameObject player)
-    {
-        player.SetActive(false); // Desativa o jogador temporariamente
-        yield return new WaitForSeconds(respawnDelay);
-        
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        GameObject alivePlayer = players.FirstOrDefault(p => p.activeSelf);
-
-        if (alivePlayer != null)
-        {
-            player.transform.position = alivePlayer.transform.position;
-            player.SetActive(true);
-        }
-        else
-        {
-           player.transform.position = Spawn.transform.position;
-        }
-        
-        GameObject[] players1 = GameObject.FindGameObjectsWithTag("Thing");
-        GameObject alivePlayer1 = players1.FirstOrDefault(p => p.activeSelf);
-
-        if (alivePlayer1 != null)
-        {
-            player.transform.position = alivePlayer1.transform.position;
-            player.SetActive(true);
-        }
-        else
-        {
-            player.transform.position = Spawn.transform.position;
-        }
-
-        
     }
 }

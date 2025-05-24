@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
@@ -10,6 +11,9 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask playerLayer;
 
+    [SerializeField] private AudioSource AudioSource;
+    [SerializeField] private AudioClip WalkSound;
+
     private Rigidbody2D rb;
     private EnemyCombat combatScript;
     private bool isGrounded;
@@ -17,6 +21,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
+        AudioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         combatScript = GetComponent<EnemyCombat>();
     }
@@ -43,6 +48,7 @@ public class EnemyMovement : MonoBehaviour
         else if (Vector2.Distance(transform.position, targetPlayer.position) <= visionRange)
         {
             // Jogador dentro da visão -> perseguir
+            StartCoroutine(WalkSoundPlay());
             Vector2 direction = (targetPlayer.position - transform.position).normalized;
             rb.linearVelocity = new Vector2(direction.x * moveSpeed, rb.linearVelocity.y);
 
@@ -95,5 +101,11 @@ public class EnemyMovement : MonoBehaviour
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
+    }
+
+    IEnumerator WalkSoundPlay()
+    {
+        yield return new WaitForSeconds(1);
+        AudioSource.PlayOneShot(WalkSound);
     }
 }

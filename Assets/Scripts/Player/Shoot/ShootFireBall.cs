@@ -7,6 +7,7 @@ public class ShootFireBall : MonoBehaviour
     [SerializeField] private Transform firePoint;            // Ponto de spawn da fireball
     [SerializeField] private float fireballSpeed = 10f;      // Velocidade da fireball
     [SerializeField] private KeyCode shootKey = KeyCode.J;   // Tecla para atirar
+    [SerializeField] private AudioSource shootSound;
     private PlayerMovement movementScript;
 
     void Update()
@@ -20,6 +21,7 @@ public class ShootFireBall : MonoBehaviour
 
     void Shoot()
     {
+        shootSound.Play();
         float direction = transform.right.x > 0 ? 1 : -1;
 
         GameObject fireballPrefab = direction > 0 ? FireBallRight : FiraBallLeft;

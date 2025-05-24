@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: 2eb3c4e3fc08c934a82b2fb6f30ff226
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7960145068947572991
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_0"
+  - first:
+      213: 6203325947520281812
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_1"
+  - first:
+      213: -8267105256819821242
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_2"
+  - first:
+      213: 4984220937268878303
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_3"
+  - first:
+      213: 4300883852539668773
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_4"
+  - first:
+      213: 6974317166727164996
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_5"
+  - first:
+      213: -4769998444771890827
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_6"
+  - first:
+      213: -9104035574298899177
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_7"
+  - first:
+      213: -7094339080396391454
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_8"
+  - first:
+      213: -524854898405088455
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_9"
+  - first:
+      213: 1550847816903168003
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_10"
+  - first:
+      213: 5553476164673543895
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_11"
+  - first:
+      213: -8552218213145504489
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_12"
+  - first:
+      213: 1931715941458164033
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_13"
+  - first:
+      213: -3917494405960076712
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_14"
+  - first:
+      213: -3130638063114004359
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_15"
+  - first:
+      213: 6795739845052873492
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_16"
+  - first:
+      213: 3257890099443250699
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_17"
+  - first:
+      213: 4790209323341032788
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_18"
+  - first:
+      213: 1408906540628359311
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_19"
+  - first:
+      213: -1419810058850667830
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_20"
+  - first:
+      213: 6986580783355845557
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_21"
+  - first:
+      213: -7362498881514677219
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_22"
+  - first:
+      213: 8094889223532019441
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_23"
+  - first:
+      213: -1941605986333204523
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_24"
+  - first:
+      213: -8840064982643988344
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_25"
+  - first:
+      213: 6817986137979539940
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_26"
+  - first:
+      213: 2545094944634633205
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_27"
+  - first:
+      213: -6939721870441915337
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_28"
+  - first:
+      213: -1861614226603026750
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_29"
+  - first:
+      213: -1200064657480463490
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_30"
+  - first:
+      213: -1997197742155510722
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_31"
+  - first:
+      213: 8571756237528313488
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_32"
+  - first:
+      213: 1991533191153908321
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_33"
+  - first:
+      213: 7985138401326348246
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_34"
+  - first:
+      213: 832564409410350801
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_35"
+  - first:
+      213: -3709273186844603292
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_36"
+  - first:
+      213: -4617971747991725013
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_37"
+  - first:
+      213: -2529954624352565620
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_38"
+  - first:
+      213: 2923552905519483445
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_39"
+  - first:
+      213: -3030185423624205735
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_40"
+  - first:
+      213: -7770535904766971980
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_41"
+  - first:
+      213: -1240253577888169847
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_42"
+  - first:
+      213: 3207841249371412494
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_43"
+  - first:
+      213: 1251231483944440495
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_44"
+  - first:
+      213: 6240817364283917044
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_45"
+  - first:
+      213: 1623198803547360158
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_46"
+  - first:
+      213: 7384017033046856857
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_47"
+  - first:
+      213: 243912844832928089
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_48"
+  - first:
+      213: 8510045120189783108
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_49"
+  - first:
+      213: 6293004827329122409
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_50"
+  - first:
+      213: -440817769935554168
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_51"
+  - first:
+      213: -8375747914354835440
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_52"
+  - first:
+      213: 3532171936297026120
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_53"
+  - first:
+      213: -1821156293845644180
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_54"
+  - first:
+      213: 912668359841217086
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_55"
+  - first:
+      213: 8262126869097246804
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_56"
+  - first:
+      213: -2843755439633413108
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_57"
+  - first:
+      213: 915908409014122939
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_58"
+  - first:
+      213: 429102096374857049
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_59"
+  - first:
+      213: 8894922783224728132
+    second: "Tom\xE1sReal_22405562_spritesheet_environment_60"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f5db0d92997df4b80132d2b28dfe06
+      internalID: -1483797118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_1"
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b832157f3f3c7d44aa168da16686545
+      internalID: -741152268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_2"
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f9cdfbcb7e5684c90e9f54148c4bd6
+      internalID: -214147716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_3"
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4239ab927f97ccb47876f14ef5b70700
+      internalID: 680250527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_4"
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5108c45c5668c4883745f1d9fb47db
+      internalID: 1341313574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_5"
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e25083afc46404c9dabc8f928aad3f
+      internalID: 1180936152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_6"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b05aa41092652a4ab0de9debe5d9866
+      internalID: 805059594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_7"
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd99ae365f29be14391309f9a8ef5a0c
+      internalID: -107094473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_8"
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c415f77b4a1c8488f229d687a86c79
+      internalID: -904146474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_9"
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac13d123bf361244910e15ea344bbed
+      internalID: -804502372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_10"
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bd371df27f339409be5dd1f36f964b
+      internalID: -339029435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_11"
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c7a3dc21666f54dab56b155ca63eaa
+      internalID: -837186232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_12"
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ce6d3d7dcc4704ebbf42bdc70ccb6b
+      internalID: -76422892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_13"
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f121e8e88a2a1b6408551f5b5034ea61
+      internalID: 262620150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Tom\xE1sReal_22405562_spritesheet_environment_14"
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 91
+        width: 130
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 023465e8891c8e6498c1382e6e007ec1
+      internalID: 1030822011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4065fdc7bb31789499a642701623f6fb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Tom\xE1sReal_22405562_spritesheet_environment_0": -1483797118
+      "Tom\xE1sReal_22405562_spritesheet_environment_1": -741152268
+      "Tom\xE1sReal_22405562_spritesheet_environment_10": -339029435
+      "Tom\xE1sReal_22405562_spritesheet_environment_11": -837186232
+      "Tom\xE1sReal_22405562_spritesheet_environment_12": -76422892
+      "Tom\xE1sReal_22405562_spritesheet_environment_13": 262620150
+      "Tom\xE1sReal_22405562_spritesheet_environment_14": 1030822011
+      "Tom\xE1sReal_22405562_spritesheet_environment_2": -214147716
+      "Tom\xE1sReal_22405562_spritesheet_environment_3": 680250527
+      "Tom\xE1sReal_22405562_spritesheet_environment_4": 1341313574
+      "Tom\xE1sReal_22405562_spritesheet_environment_5": 1180936152
+      "Tom\xE1sReal_22405562_spritesheet_environment_6": 805059594
+      "Tom\xE1sReal_22405562_spritesheet_environment_7": -107094473
+      "Tom\xE1sReal_22405562_spritesheet_environment_8": -904146474
+      "Tom\xE1sReal_22405562_spritesheet_environment_9": -804502372
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

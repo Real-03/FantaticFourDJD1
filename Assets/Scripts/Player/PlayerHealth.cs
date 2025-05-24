@@ -3,13 +3,17 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 100;
-    [SerializeField] private int currentHealth;
+    [SerializeField] private float maxHealth = 100;
+    [SerializeField] private float currentHealth;
     [SerializeField] private Image healthBar;
+    [SerializeField] private AudioClip DamageSound;
+    [SerializeField] private AudioSource AudioSource;
 
     private Animator animator;
     private PlayerMovement movementScript;
 
+    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private Respawn respawnManager;
     
 
     void Start()
@@ -17,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         movementScript = GetComponent<PlayerMovement>();
         animator = GetComponent<Animator>();
+        AudioSource = GetComponent<AudioSource>();
 
         if (healthBar != null)
         {
@@ -24,11 +29,12 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage, Transform attacker)
+    public void TakeDamage(float damage, Transform attacker)
     {
         currentHealth -= damage;
         Debug.Log($"{gameObject.name} levou {damage} de dano! Vida restante: {currentHealth}");
-
+        
+        SpriteFlash.Flash(spriteRenderer, 0.2f, 1);
         SetHealthUI(currentHealth);
         
         if (currentHealth <= 0)
@@ -37,8 +43,8 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            AudioSource.PlayOneShot(DamageSound);
             animator.SetTrigger("Hit");
-            
         }
 
 
@@ -46,18 +52,28 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        AudioSource.PlayOneShot(DamageSound);
         Debug.Log($"{gameObject.name} morreu!");
-
         animator.SetTrigger("Die");
-        movementScript.enabled = false;
-        gameObject.SetActive(false);
-        this.enabled = false;
+        StartCoroutine(respawnManager.RespawnPlayer(this.gameObject));
+    }
+    public void HealPlayer(float amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        SetHealthUI(currentHealth);
+
     }
 
-    void SetHealthUI(int Health)
+    void SetHealthUI(float Health)
     {
         float targerFillAmount = (float)Health/maxHealth;
         healthBar.fillAmount = targerFillAmount > 0 ? targerFillAmount : 0;
+    }
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+        SetHealthUI(currentHealth);
     }
 
     private void OnAnimationEnd()

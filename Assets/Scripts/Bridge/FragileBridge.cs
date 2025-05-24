@@ -11,6 +11,9 @@ public class FragileBridge2D : MonoBehaviour
     public GameObject warningParticlesPrefab;
     public GameObject bridgeBreakEffectPrefab;
     public Animator animator;
+    public AudioSource AudioSource;
+    public AudioClip bridgeCreak;
+    public AudioClip bridgeBreak;
 
     [Header("Configuração")]
     public float breakDelay = 2f; // Tempo que os 2 jogadores precisam estar na ponte
@@ -19,6 +22,10 @@ public class FragileBridge2D : MonoBehaviour
     private bool warningShown = false;
     private float timer = 0f;
 
+    private void Start()
+    {
+        AudioSource = GetComponent<AudioSource>();
+    }
     void Update()
     {
         if (bridgeBroken) return;
@@ -48,6 +55,7 @@ public class FragileBridge2D : MonoBehaviour
 
     private void ShowWarning()
     {
+        AudioSource.PlayOneShot(bridgeCreak);
         warningShown = true;
         if (warningParticlesPrefab != null)
         {
@@ -58,7 +66,7 @@ public class FragileBridge2D : MonoBehaviour
     private void BreakBridge()
     {
         bridgeBroken = true;
-
+        AudioSource.PlayOneShot(bridgeBreak);
         if (animator != null)
         {
             animator.SetTrigger("Break");

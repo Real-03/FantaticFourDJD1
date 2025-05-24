@@ -91,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = currentVelocity;
     }
 
-    void ComputeGroundState()
+    public void ComputeGroundState()
     {
         Collider2D collider = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         isGrounded = collider != null;
@@ -107,5 +107,10 @@ public class PlayerMovement : MonoBehaviour
     public float GetMoveDir()
     {
         return moveDir;
+    } 
+
+    public bool GetGrouncCheck()
+    {
+        return isGrounded;
     } 
 }

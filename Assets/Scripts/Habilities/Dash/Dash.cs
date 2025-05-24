@@ -9,21 +9,26 @@ public class Dash : MonoBehaviour
     [SerializeField] private float dashDuration = 0.2f;
     [SerializeField] private float dashCooldown = 2f;
     [SerializeField] private KeyCode dashKey = KeyCode.E;
+    [SerializeField] private AudioSource dashSound;
 
     [Header("References")]
     [SerializeField] private Image dashCooldownUI;
     [SerializeField] private Rigidbody2D rb;
-
+     
+    [SerializeField] private GameObject dashParticle;
+    [SerializeField] private Transform dashParticleSpawn;
     private bool canDash = true;
     private bool isDashing = false;
     private float originalGravity;
 
+    private SpawnParticle particleManager;
     private void Start()
     {
         if (rb == null)
             rb = GetComponent<Rigidbody2D>();
 
         originalGravity = rb.gravityScale;
+        particleManager = FindFirstObjectByType<SpawnParticle>();
     }
 
     private void Update()
@@ -36,11 +41,13 @@ public class Dash : MonoBehaviour
 
     private IEnumerator PerformDash()
     {
+        particleManager.SpawnParticlesY(dashParticle,dashParticleSpawn,transform.right.normalized.x);
         canDash = false;
         isDashing = true;
 
         float startTime = Time.time;
         Vector2 dashDirection = transform.right.normalized;
+        dashSound.Play();
 
         // Desativa gravidade para manter o dash reto
         rb.gravityScale = 0;
