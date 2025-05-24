@@ -106,6 +106,6 @@ public class EnemyMovement : MonoBehaviour
     IEnumerator WalkSoundPlay()
     {
         yield return new WaitForSeconds(1);
-        AudioSource.PlayOneShot(WalkSound);
+        
     }
 }

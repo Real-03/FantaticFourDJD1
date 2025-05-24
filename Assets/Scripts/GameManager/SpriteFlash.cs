@@ -27,7 +27,7 @@ public class SpriteFlash : MonoBehaviour
     private IEnumerator FlashRoutine(SpriteRenderer spriteRenderer, float duration, int count)
     {
         Color originalColor = spriteRenderer.color;
-        Color flashColor = new Color(originalColor.r, originalColor.g, originalColor.b, 0.3f); // Opacidade reduzida
+        Color flashColor = new Color(255,255,255, 1f); // Opacidade reduzida
 
         for (int i = 0; i < count; i++)
         {

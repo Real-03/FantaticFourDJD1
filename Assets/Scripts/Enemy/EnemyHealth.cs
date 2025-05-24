@@ -14,6 +14,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private AudioClip DamageSound;
     [SerializeField] private AudioSource AudioSource;
 
+    private SpriteRenderer spriteRenderer;
     private UpdateScoreUI updateScoreUI;
     private GameData gameData;
     void Start()
@@ -23,13 +24,14 @@ public class EnemyHealth : MonoBehaviour
         AudioSource = GetComponent<AudioSource>();
         updateScoreUI = FindFirstObjectByType<UpdateScoreUI>();
         gameData = FindFirstObjectByType<GameData>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(int damage, Transform attacker)
     {
         currentHealth -= damage;
         Debug.Log($"{gameObject.name} levou {damage} de dano! Vida restante: {currentHealth}");
-
+        SpriteFlash.Flash(spriteRenderer, 0.2f, 1);
         SetHealthUI(currentHealth);
 
         if (currentHealth <= 0)
