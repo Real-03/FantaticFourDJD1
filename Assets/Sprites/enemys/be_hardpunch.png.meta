@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      be_hardpunch_0: -7611428626946648762
+      be_hardpunch_1: 2644324945664383867
+      be_hardpunch_2: 8965129964854276805
+      be_hardpunch_3: -5146530066764642161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

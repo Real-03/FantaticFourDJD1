@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class ShootFireBall : MonoBehaviour
 {
-    [SerializeField] private GameObject FireBallRight; // Prefab da fireball para a direita
-    [SerializeField] private GameObject FiraBallLeft;  // Prefab da fireball para a esquerda
+    [SerializeField] private GameObject FireBall; // Prefab da fireball para a direita
     [SerializeField] private Transform firePoint;            // Ponto de spawn da fireball
     [SerializeField] private float fireballSpeed = 10f;      // Velocidade da fireball
     [SerializeField] private KeyCode shootKey = KeyCode.J;   // Tecla para atirar
@@ -24,10 +23,9 @@ public class ShootFireBall : MonoBehaviour
         shootSound.Play();
         float direction = transform.right.x > 0 ? 1 : -1;
 
-        GameObject fireballPrefab = direction > 0 ? FireBallRight : FiraBallLeft;
+        Quaternion rotation = direction == 1 ? Quaternion.Euler(0.0f, 0.0f, 0.0f): Quaternion.Euler(0.0f, 180.0f, 0.0f); 
 
-
-        GameObject fireball = Instantiate(fireballPrefab, firePoint.position, Quaternion.identity);
+        GameObject fireball = Instantiate(FireBall, firePoint.position, rotation);
         Rigidbody2D rb = fireball.GetComponent<Rigidbody2D>();
 
 
