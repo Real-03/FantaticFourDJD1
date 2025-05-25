@@ -14,7 +14,7 @@ public class FinisGame : MonoBehaviour
         PlayerMovement player = other.GetComponent<PlayerMovement>();
         if (player != null)
         {
-            if (gameData != null && gameData.GetBeacons()==4)
+            if (gameData != null && gameData.GetBeacons()==6)
             {
                 Debug.Log("Todos os beacons estão ativos. Carregando cena de vitória...");
                 SceneManager.LoadScene(winSceneName);

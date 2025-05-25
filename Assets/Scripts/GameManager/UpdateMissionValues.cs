@@ -17,6 +17,6 @@ public class UpdateMissionValues : MonoBehaviour
 
     public void MissionChangeUI()
     {
-        scoreText.text = gameData.GetBeacons().ToString ()+ " / 4";
+        scoreText.text = gameData.GetBeacons().ToString ()+ " / 6";
     }
 }
