@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shock_gif_0: 5787121265588251379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

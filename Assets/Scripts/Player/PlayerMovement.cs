@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private float originalGravity;
     private float moveDir;
     private PlayerAttack playerAttack; // Referência ao script do player
+    private Animator animator;
+    
 
     void Start()
     {
@@ -29,12 +31,13 @@ public class PlayerMovement : MonoBehaviour
         playerAttack = GetComponent<PlayerAttack>(); //Pega o script no mesmo objeto
         horizontalAxisName = gameObject.name.ToLower() == "thing" ? "Horizontal_P1" : "Horizontal_P2"; // Troca os controlos para cada jogador no eixo Horizontal
         jumpAxisName = gameObject.name.ToLower() == "thing" ? "Jump_P1" : "Jump_P2"; // Troca os controlos para cada jogador no eixo Horizontal
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         ComputeGroundState();
-
+        animator.SetBool("GroundCheck", isGrounded);
         moveDir = Input.GetAxis(horizontalAxisName);
         Vector2 currentVelocity = rb.linearVelocity;
 
@@ -87,7 +90,9 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.gravityScale = originalGravity;
         }
-
+        
+        animator.SetFloat("JumpVelocity", currentVelocity.y);
+        animator.SetFloat("WalkSpeed", Mathf.Abs(currentVelocity.x));
         rb.linearVelocity = currentVelocity;
     }
 
