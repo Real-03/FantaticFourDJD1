@@ -55,7 +55,7 @@ public class FragileBridge2D : MonoBehaviour
 
     private void ShowWarning()
     {
-        AudioSource.PlayOneShot(bridgeCreak);
+        //AudioSource.PlayOneShot(bridgeCreak);
         warningShown = true;
         if (warningParticlesPrefab != null)
         {
@@ -66,7 +66,7 @@ public class FragileBridge2D : MonoBehaviour
     private void BreakBridge()
     {
         bridgeBroken = true;
-        AudioSource.PlayOneShot(bridgeBreak);
+        //AudioSource.PlayOneShot(bridgeBreak);
         if (animator != null)
         {
             animator.SetTrigger("Break");

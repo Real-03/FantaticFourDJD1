@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1557728741700295265}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1219087556140120111}
   - component: {fileID: 5760914219547360626}
   - component: {fileID: 951370152503289429}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "Tom\xE1sReal_22405562_spritesheet_environment_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1483797118, guid: 2eb3c4e3fc08c934a82b2fb6f30ff226, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -164,6 +164,9 @@ MonoBehaviour:
   warningParticlesPrefab: {fileID: 369704551777266037, guid: 6a40003294352da44b2285e49b318913, type: 3}
   bridgeBreakEffectPrefab: {fileID: 369704551777266037, guid: 6a40003294352da44b2285e49b318913, type: 3}
   animator: {fileID: 1219087556140120111}
+  AudioSource: {fileID: 0}
+  bridgeCreak: {fileID: 0}
+  bridgeBreak: {fileID: 0}
   breakDelay: 2
 --- !u!68 &951370152503289429
 EdgeCollider2D:
@@ -202,11 +205,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.65, y: 0.41619325}
-  - {x: -0.3367166, y: 0.29934406}
-  - {x: 0.014782667, y: 0.24007535}
-  - {x: 0.35040456, y: 0.3011067}
-  - {x: 0.63044727, y: 0.41060686}
+  - {x: -0.65396595, y: 0.3776881}
+  - {x: 0.048780397, y: 0.22874552}
+  - {x: 0.630454, y: 0.41834015}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
