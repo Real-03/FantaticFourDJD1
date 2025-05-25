@@ -286,7 +286,7 @@ SpriteRenderer:
   m_SortingLayerID: 1431177385
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 544601103650737017, guid: 39a6d5204d312d6489d4256c46fc4873, type: 3}
+  m_Sprite: {fileID: -9179847999618735569, guid: f06b60de1c847477fbc1f119b8abf16d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -371,7 +371,7 @@ Animator:
   m_GameObject: {fileID: 6753108538869033028}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a9e62fb8326300043a472e5c8a38dee0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3599e53a05400fe41b843974a5f49d53, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -401,6 +401,8 @@ MonoBehaviour:
   healthBar: {fileID: 592355984561353581}
   healthPickupPrefab: {fileID: 5517006139051860626, guid: 32d8410e2d6c4f743b78a1f1a5a2c639, type: 3}
   dropChance: 0.3
+  DamageSound: {fileID: 0}
+  AudioSource: {fileID: 0}
 --- !u!114 &4702182032321933233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +448,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
+  AudioSource: {fileID: 0}
+  WalkSound: {fileID: 0}
 --- !u!1 &7162525046696250793
 GameObject:
   m_ObjectHideFlags: 0
